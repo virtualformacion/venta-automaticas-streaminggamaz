@@ -91,7 +91,26 @@
       "image": "disney.jpg",
       "priceCOP": 3,
       "inventory": {
-        "profileAccounts": []
+        "profileAccounts": [
+          {
+            "id": "pa_bc3916c2-f11f-4fed-9e75-27e8ffed13e7",
+            "email": "ANDREINA@gmail.com",
+            "password": "432342323",
+            "profiles": [
+              {
+                "name": "1",
+                "code": "32544",
+                "available": true
+              },
+              {
+                "name": "2",
+                "code": "43543",
+                "available": true
+              }
+            ],
+            "addedAt": "2026-01-25T06:26:27.296Z"
+          }
+        ]
       },
       "enabled": true
     },
