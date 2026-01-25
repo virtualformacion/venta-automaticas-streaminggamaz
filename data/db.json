@@ -103,7 +103,7 @@
       "serviceKey": "disney",
       "name": "Disney+ (1 Perfil)",
       "image": "disney.jpg",
-      "priceCOP": 10000,
+      "priceCOP": 3,
       "inventory": {
         "profileAccounts": [
           {
