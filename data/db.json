@@ -105,15 +105,7 @@
       "image": "disney.jpg",
       "priceCOP": 3,
       "inventory": {
-        "profileAccounts": [
-          {
-            "id": "pa_a24d8f44-05bc-409b-bee2-e36753ee8319",
-            "email": "uudiid@ghhjdj.ddd",
-            "password": "sfwefwef",
-            "profiles": [],
-            "addedAt": "2026-01-22T18:25:53.470Z"
-          }
-        ]
+        "profileAccounts": []
       },
       "enabled": true
     },
