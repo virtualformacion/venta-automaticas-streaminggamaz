@@ -126,7 +126,7 @@
           }
         ]
       },
-      "enabled": false
+      "enabled": true
     },
     {
       "key": "prime_full",
