@@ -149,15 +149,7 @@
       "image": "gift.jpg",
       "priceCOP": 16,
       "inventory": {
-        "giftcards": [
-          {
-            "id": "gc_7959a741-3730-4010-83c9-59f1591e08ae",
-            "code": "FASFASFSAFASFSAFASA",
-            "available": true,
-            "soldAt": null,
-            "addedAt": "2026-01-23T23:12:25.961Z"
-          }
-        ]
+        "giftcards": []
       },
       "enabled": true
     }
