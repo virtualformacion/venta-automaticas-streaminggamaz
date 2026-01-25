@@ -11,7 +11,7 @@
       "username": "andres",
       "password": "111111",
       "expiresAt": "2026-01-30",
-      "balanceCOP": 8398,
+      "balanceCOP": 8392,
       "createdAt": "2026-01-21T05:50:37.232Z"
     },
     {
@@ -93,12 +93,14 @@
               {
                 "name": "1",
                 "code": "32544",
-                "available": true
+                "available": false,
+                "soldAt": "2026-01-25T06:28:09.625Z"
               },
               {
                 "name": "2",
                 "code": "43543",
-                "available": true
+                "available": false,
+                "soldAt": "2026-01-25T06:28:09.625Z"
               }
             ],
             "addedAt": "2026-01-25T06:26:27.296Z"
@@ -1037,6 +1039,36 @@
         }
       ],
       "purchasedAt": "2026-01-25T06:27:22.798Z"
+    },
+    {
+      "id": "p_877ee5dc-7b52-4e1f-bf21-1a9ca260ccdf",
+      "code": "C-9be7fc56-49d4-4483-86c5-55caddce349a",
+      "userId": "u_2b579da5-dbca-411a-8776-ea0c01b66842",
+      "username": "andres",
+      "productKey": "disney_profile",
+      "productName": "Disney+ Plus (1 Perfil)",
+      "unitPriceCOP": 3,
+      "qty": 2,
+      "totalPriceCOP": 6,
+      "items": [
+        {
+          "name": "Disney+ Plus (1 Perfil)",
+          "mode": "profile",
+          "email": "ANDREINA@gmail.com",
+          "password": "432342323",
+          "profile": "1",
+          "code": "32544"
+        },
+        {
+          "name": "Disney+ Plus (1 Perfil)",
+          "mode": "profile",
+          "email": "ANDREINA@gmail.com",
+          "password": "432342323",
+          "profile": "2",
+          "code": "43543"
+        }
+      ],
+      "purchasedAt": "2026-01-25T06:28:09.625Z"
     }
   ]
 }
