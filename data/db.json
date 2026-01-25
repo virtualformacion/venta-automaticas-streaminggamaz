@@ -74,12 +74,6 @@
             "password": "asfsaf",
             "profiles": [
               {
-                "name": "1",
-                "code": "1212",
-                "available": false,
-                "soldAt": "2026-01-22T18:27:46.315Z"
-              },
-              {
                 "name": "2",
                 "code": "1212",
                 "available": true
@@ -118,12 +112,6 @@
             "password": "sfwefwef",
             "profiles": [
               {
-                "name": "1",
-                "code": "3453",
-                "available": false,
-                "soldAt": "2026-01-22T18:27:46.315Z"
-              },
-              {
                 "name": "2",
                 "code": "3234",
                 "available": true
@@ -160,34 +148,7 @@
       "image": "prime.jpg",
       "priceCOP": 5,
       "inventory": {
-        "profileAccounts": [
-          {
-            "id": "pa_b271f796-9b66-4ff3-bd15-128306d7381a",
-            "email": "fdgfdg@hjdfhf.llj",
-            "password": "fdgdfgg",
-            "profiles": [
-              {
-                "name": "1",
-                "code": "3453",
-                "available": false,
-                "soldAt": "2026-01-22T18:27:46.315Z"
-              },
-              {
-                "name": "2",
-                "code": "3432",
-                "available": false,
-                "soldAt": "2026-01-22T18:29:03.554Z"
-              },
-              {
-                "name": "3",
-                "code": "3664",
-                "available": false,
-                "soldAt": "2026-01-22T18:29:03.554Z"
-              }
-            ],
-            "addedAt": "2026-01-22T18:26:29.978Z"
-          }
-        ]
+        "profileAccounts": []
       },
       "enabled": false
     },
