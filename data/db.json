@@ -48,14 +48,7 @@
       "image": "netflix.jpg",
       "priceCOP": 10,
       "inventory": {
-        "fullAccounts": [
-          {
-            "id": "fa_84f2a872-d798-4468-b062-a6fcdd346e0e",
-            "email": "andres@yopmail.com",
-            "password": "asdsad",
-            "addedAt": "2026-01-22T18:23:57.701Z"
-          }
-        ]
+        "fullAccounts": []
       },
       "enabled": true
     },
