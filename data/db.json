@@ -170,6 +170,34 @@
             "available": false,
             "soldAt": "2026-01-25T06:29:35.108Z",
             "addedAt": "2026-01-25T06:26:48.411Z"
+          },
+          {
+            "id": "gc_9bd2f7aa-a2ff-4d7d-b90f-287db2ed7aca",
+            "code": "JHGHJGJGJFHJJJGJH",
+            "available": true,
+            "soldAt": null,
+            "addedAt": "2026-01-25T15:33:25.741Z"
+          },
+          {
+            "id": "gc_af258fc8-b46d-4893-b086-fcc67b416662",
+            "code": "HGHFGHGFHGHGHGHGH",
+            "available": true,
+            "soldAt": null,
+            "addedAt": "2026-01-25T15:33:25.741Z"
+          },
+          {
+            "id": "gc_bed85dee-8f88-413d-8f9c-1a5c37491108",
+            "code": "HTFHYGFHGHFGHFGFH",
+            "available": true,
+            "soldAt": null,
+            "addedAt": "2026-01-25T15:33:25.741Z"
+          },
+          {
+            "id": "gc_40ee76c9-5ea4-4c65-89e4-f41e31449979",
+            "code": "JFUYFJYHGJHJHJHGJ",
+            "available": true,
+            "soldAt": null,
+            "addedAt": "2026-01-25T15:33:25.741Z"
           }
         ]
       },
