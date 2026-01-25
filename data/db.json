@@ -67,15 +67,7 @@
       "image": "netflix.jpg",
       "priceCOP": 6,
       "inventory": {
-        "profileAccounts": [
-          {
-            "id": "pa_a894ce6d-0a56-45cb-a699-5c1972ca10e2",
-            "email": "2wsdqw@hdsgd.dd",
-            "password": "asfsaf",
-            "profiles": [],
-            "addedAt": "2026-01-22T18:25:17.510Z"
-          }
-        ]
+        "profileAccounts": []
       },
       "enabled": false
     },
