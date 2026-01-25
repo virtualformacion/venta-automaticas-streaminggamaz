@@ -1,0 +1,1102 @@
+{
+  "settings": {
+    "adminUser": "admin",
+    "adminPass": "20262026",
+    "adminExpiresAt": "2027-01-01",
+    "allowSelfRegister": true
+  },
+  "users": [
+    {
+      "id": "u_2b579da5-dbca-411a-8776-ea0c01b66842",
+      "username": "andres",
+      "password": "111111",
+      "expiresAt": "2026-01-30",
+      "balanceCOP": 8408,
+      "createdAt": "2026-01-21T05:50:37.232Z"
+    },
+    {
+      "id": "u_7a7e1ffc-d3d8-4648-a411-ff3673b84b2e",
+      "username": "ana763",
+      "password": "perro34",
+      "expiresAt": "2026-02-06",
+      "balanceCOP": 50000,
+      "createdAt": "2026-01-21T19:24:22.822Z"
+    },
+    {
+      "id": "u_2f265a9e-c1f3-49bd-899f-75b3b904dc5c",
+      "username": "luis",
+      "password": "111111",
+      "expiresAt": "2026-01-30",
+      "balanceCOP": 20000,
+      "createdAt": "2026-01-22T04:48:23.544Z"
+    },
+    {
+      "id": "u_ecf40458-99ab-49f8-ad44-fb146518de98",
+      "username": "luis1",
+      "password": "1234",
+      "expiresAt": "2026-02-21",
+      "balanceCOP": 50,
+      "createdAt": "2026-01-22T17:06:01.249Z"
+    }
+  ],
+  "services": [
+    {
+      "key": "netflix_full",
+      "type": "full",
+      "serviceKey": "netflix",
+      "name": "Netflix (Cuenta completa)",
+      "image": "netflix.jpg",
+      "priceCOP": 10,
+      "inventory": {
+        "fullAccounts": [
+          {
+            "id": "fa_84f2a872-d798-4468-b062-a6fcdd346e0e",
+            "email": "andres@yopmail.com",
+            "password": "asdsad",
+            "addedAt": "2026-01-22T18:23:57.701Z"
+          }
+        ]
+      },
+      "enabled": true
+    },
+    {
+      "key": "netflix_profile",
+      "type": "profile",
+      "serviceKey": "netflix",
+      "name": "Netflix (1 Perfil)",
+      "image": "netflix.jpg",
+      "priceCOP": 6,
+      "inventory": {
+        "profileAccounts": [
+          {
+            "id": "pa_a894ce6d-0a56-45cb-a699-5c1972ca10e2",
+            "email": "2wsdqw@hdsgd.dd",
+            "password": "asfsaf",
+            "profiles": [
+              {
+                "name": "1",
+                "code": "1212",
+                "available": false,
+                "soldAt": "2026-01-22T18:27:46.315Z"
+              },
+              {
+                "name": "2",
+                "code": "1212",
+                "available": true
+              }
+            ],
+            "addedAt": "2026-01-22T18:25:17.510Z"
+          }
+        ]
+      },
+      "enabled": false
+    },
+    {
+      "key": "disney_full",
+      "type": "full",
+      "serviceKey": "disney",
+      "name": "Disney+ (Cuenta completa)",
+      "image": "disney.jpg",
+      "priceCOP": 30000,
+      "inventory": {
+        "fullAccounts": []
+      },
+      "enabled": false
+    },
+    {
+      "key": "disney_profile",
+      "type": "profile",
+      "serviceKey": "disney",
+      "name": "Disney+ (1 Perfil)",
+      "image": "disney.jpg",
+      "priceCOP": 4,
+      "inventory": {
+        "profileAccounts": [
+          {
+            "id": "pa_a24d8f44-05bc-409b-bee2-e36753ee8319",
+            "email": "uudiid@ghhjdj.ddd",
+            "password": "sfwefwef",
+            "profiles": [
+              {
+                "name": "1",
+                "code": "3453",
+                "available": false,
+                "soldAt": "2026-01-22T18:27:46.315Z"
+              },
+              {
+                "name": "2",
+                "code": "3234",
+                "available": true
+              },
+              {
+                "name": "3",
+                "code": "4366",
+                "available": true
+              }
+            ],
+            "addedAt": "2026-01-22T18:25:53.470Z"
+          }
+        ]
+      },
+      "enabled": false
+    },
+    {
+      "key": "prime_full",
+      "type": "full",
+      "serviceKey": "prime",
+      "name": "Prime Video (Cuenta completa)",
+      "image": "prime.jpg",
+      "priceCOP": 0,
+      "inventory": {
+        "fullAccounts": []
+      },
+      "enabled": false
+    },
+    {
+      "key": "prime_profile",
+      "type": "profile",
+      "serviceKey": "prime",
+      "name": "Prime Video (1 Perfil)",
+      "image": "prime.jpg",
+      "priceCOP": 5,
+      "inventory": {
+        "profileAccounts": [
+          {
+            "id": "pa_b271f796-9b66-4ff3-bd15-128306d7381a",
+            "email": "fdgfdg@hjdfhf.llj",
+            "password": "fdgdfgg",
+            "profiles": [
+              {
+                "name": "1",
+                "code": "3453",
+                "available": false,
+                "soldAt": "2026-01-22T18:27:46.315Z"
+              },
+              {
+                "name": "2",
+                "code": "3432",
+                "available": false,
+                "soldAt": "2026-01-22T18:29:03.554Z"
+              },
+              {
+                "name": "3",
+                "code": "3664",
+                "available": false,
+                "soldAt": "2026-01-22T18:29:03.554Z"
+              }
+            ],
+            "addedAt": "2026-01-22T18:26:29.978Z"
+          }
+        ]
+      },
+      "enabled": false
+    },
+    {
+      "key": "combo3",
+      "type": "bundle",
+      "name": "Combo Netflix + Prime + Disney (Perfiles)",
+      "image": "combo3.jpg",
+      "priceCOP": 20000,
+      "bundle": [
+        {
+          "key": "netflix_profile",
+          "qty": 1
+        },
+        {
+          "key": "prime_profile",
+          "qty": 1
+        },
+        {
+          "key": "disney_profile",
+          "qty": 1
+        }
+      ],
+      "enabled": false
+    },
+    {
+      "key": "netflix_giftcard15",
+      "type": "giftcard",
+      "serviceKey": "netflix",
+      "name": "Giftcard Netflix USA $15",
+      "image": "netflix.jpg",
+      "priceCOP": 16,
+      "inventory": {
+        "giftcards": [
+          {
+            "id": "gc_7959a741-3730-4010-83c9-59f1591e08ae",
+            "code": "FASFASFSAFASFSAFASA",
+            "available": true,
+            "soldAt": null,
+            "addedAt": "2026-01-23T23:12:25.961Z"
+          },
+          {
+            "id": "gc_74d9b692-923d-4eaa-b461-7d83142c1fd7",
+            "code": "AFSAFSAFASFAFFSSASAF",
+            "available": true,
+            "soldAt": null,
+            "addedAt": "2026-01-23T23:12:25.961Z"
+          },
+          {
+            "id": "gc_87e737d1-3798-4ea4-a5a9-1011b3444591",
+            "code": "YTJYTJYTJYT",
+            "available": true,
+            "soldAt": null,
+            "addedAt": "2026-01-24T03:01:48.484Z"
+          },
+          {
+            "id": "gc_63612cd1-eb7d-49df-858b-12a46242764e",
+            "code": "ERGREGERGERG",
+            "available": true,
+            "soldAt": null,
+            "addedAt": "2026-01-24T05:17:25.452Z"
+          }
+        ]
+      },
+      "enabled": true
+    }
+  ],
+  "purchases": [
+    {
+      "id": "p_352a5f6f-c495-4f7a-9014-960224f7e37b",
+      "code": "C-54baf215-4612-49e2-8952-3abf99c39e11",
+      "userId": "u_1",
+      "username": "cliente1",
+      "productKey": "netflix_profile",
+      "productName": "Netflix (1 Perfil)",
+      "priceCOP": 15000,
+      "items": [
+        {
+          "name": "Netflix (1 Perfil)",
+          "mode": "profile",
+          "email": "netflix2@gmail.com",
+          "password": "654321",
+          "profile": "P1"
+        }
+      ],
+      "purchasedAt": "2026-01-19T21:58:57.995Z"
+    },
+    {
+      "id": "p_f1f3aca4-937f-4a5e-8c87-eec187faa7b8",
+      "code": "C-1646709b-1429-4421-80f0-24cea08ce66c",
+      "userId": "u_1",
+      "username": "cliente1",
+      "productKey": "netflix_full",
+      "productName": "Netflix (Cuenta completa)",
+      "priceCOP": 0,
+      "items": [
+        {
+          "name": "Netflix (Cuenta completa)",
+          "mode": "full",
+          "email": "andrea@gmail.com",
+          "password": "123456"
+        }
+      ],
+      "purchasedAt": "2026-01-19T23:29:37.486Z"
+    },
+    {
+      "id": "p_4952cdc8-8931-4b5e-85bc-efcca0068d8c",
+      "code": "C-77face46-65e4-4292-bf92-ffb87d200d29",
+      "userId": "u_1",
+      "username": "cliente1",
+      "productKey": "netflix_profile",
+      "productName": "Netflix (1 Perfil)",
+      "priceCOP": 15000,
+      "items": [
+        {
+          "name": "Netflix (1 Perfil)",
+          "mode": "profile",
+          "email": "netflix2@gmail.com",
+          "password": "654321",
+          "profile": "P2",
+          "code": "1234"
+        }
+      ],
+      "purchasedAt": "2026-01-20T02:12:02.415Z"
+    },
+    {
+      "id": "p_b94c36e9-972d-4350-bb63-f88422a6fb5b",
+      "code": "C-b82b048e-ae66-42d2-be14-2273d701487d",
+      "userId": "u_1",
+      "username": "cliente1",
+      "productKey": "netflix_full",
+      "productName": "Netflix (Cuenta completa)",
+      "priceCOP": 30000,
+      "items": [
+        {
+          "name": "Netflix (Cuenta completa)",
+          "mode": "full",
+          "email": "tyt@yp.com",
+          "password": "2141233"
+        }
+      ],
+      "purchasedAt": "2026-01-20T02:18:27.128Z"
+    },
+    {
+      "id": "p_cd97a7e3-91a4-4bdf-9f4e-18271fa16e97",
+      "code": "C-8f11972a-eca0-4a61-8bf1-a086680af9e8",
+      "userId": "u_1",
+      "username": "cliente1",
+      "productKey": "netflix_profile",
+      "productName": "Netflix (1 Perfil)",
+      "priceCOP": 0,
+      "items": [
+        {
+          "name": "Netflix (1 Perfil)",
+          "mode": "profile",
+          "email": "netflix2@gmail.com",
+          "password": "654321",
+          "profile": "P5",
+          "code": "1234"
+        }
+      ],
+      "purchasedAt": "2026-01-20T04:28:04.929Z"
+    },
+    {
+      "id": "p_0c88f517-eeb6-4caa-b775-0c3f897649af",
+      "code": "C-b5646301-b736-4cfd-9d54-2226aeedc6b3",
+      "userId": "u_1",
+      "username": "cliente1",
+      "productKey": "prime_profile",
+      "productName": "Prime Video (1 Perfil)",
+      "priceCOP": 15000,
+      "items": [
+        {
+          "name": "Prime Video (1 Perfil)",
+          "mode": "profile",
+          "email": "andresperez@yopmail.com",
+          "password": "123456",
+          "profile": "1",
+          "code": "00000"
+        }
+      ],
+      "purchasedAt": "2026-01-20T04:39:16.177Z"
+    },
+    {
+      "id": "p_dc9672a5-f0b4-4088-bea5-4bac924627d8",
+      "code": "C-3002eec8-3d79-4314-9660-f61e76155e91",
+      "userId": "u_1",
+      "username": "cliente1",
+      "productKey": "combo3",
+      "productName": "Combo Netflix + Prime + Disney (Perfiles)",
+      "priceCOP": 20000,
+      "items": [
+        {
+          "name": "Netflix (1 Perfil)",
+          "mode": "profile",
+          "email": "andres@yyopmail.com",
+          "password": "123456",
+          "profile": "11231",
+          "code": "1234"
+        },
+        {
+          "name": "Prime Video (1 Perfil)",
+          "mode": "profile",
+          "email": "andresperez@yopmail.com",
+          "password": "123456",
+          "profile": "2",
+          "code": "00000"
+        },
+        {
+          "name": "Disney+ (1 Perfil)",
+          "mode": "profile",
+          "email": "andreina@yxsg.com",
+          "password": "1243124",
+          "profile": "1",
+          "code": "11111"
+        }
+      ],
+      "purchasedAt": "2026-01-20T04:39:27.145Z"
+    },
+    {
+      "id": "p_5b05998d-efcb-4eaf-b9e3-235e9cdc4a5b",
+      "code": "C-51e6bfc3-4c25-4fce-b5e9-c7f431561e71",
+      "userId": "u_1",
+      "username": "cliente1",
+      "productKey": "prime_profile",
+      "productName": "Prime Video (1 Perfil)",
+      "priceCOP": 15000,
+      "items": [
+        {
+          "name": "Prime Video (1 Perfil)",
+          "mode": "profile",
+          "email": "andresperez@yopmail.com",
+          "password": "123456",
+          "profile": "3",
+          "code": "00000"
+        }
+      ],
+      "purchasedAt": "2026-01-20T04:44:08.611Z"
+    },
+    {
+      "id": "p_6bde8bba-b7f7-4d92-8205-ba57759050a8",
+      "code": "C-ea542d00-c577-4cd1-9700-ed51ff6c5314",
+      "userId": "u_1",
+      "username": "cliente1",
+      "productKey": "combo3",
+      "productName": "Combo Netflix + Prime + Disney (Perfiles)",
+      "priceCOP": 20000,
+      "items": [
+        {
+          "name": "Netflix (1 Perfil)",
+          "mode": "profile",
+          "email": "andres@yyopmail.com",
+          "password": "123456",
+          "profile": "11232",
+          "code": "1234"
+        },
+        {
+          "name": "Prime Video (1 Perfil)",
+          "mode": "profile",
+          "email": "andresperez@yopmail.com",
+          "password": "123456",
+          "profile": "4",
+          "code": "00000"
+        },
+        {
+          "name": "Disney+ (1 Perfil)",
+          "mode": "profile",
+          "email": "andreina@yxsg.com",
+          "password": "1243124",
+          "profile": "2",
+          "code": "23421"
+        }
+      ],
+      "purchasedAt": "2026-01-20T04:45:26.223Z"
+    },
+    {
+      "id": "p_8215e93d-e111-4edb-9652-41fe0f018c59",
+      "code": "C-0dfa7e85-e7e6-45c3-9542-b75c13f90520",
+      "userId": "u_1",
+      "username": "cliente1",
+      "productKey": "disney_profile",
+      "productName": "Disney+ (1 Perfil)",
+      "priceCOP": 0,
+      "items": [
+        {
+          "name": "Disney+ (1 Perfil)",
+          "mode": "profile",
+          "email": "andreina@yxsg.com",
+          "password": "1243124",
+          "profile": "3",
+          "code": "34533"
+        }
+      ],
+      "purchasedAt": "2026-01-20T04:50:00.249Z"
+    },
+    {
+      "id": "p_cd5e43ae-05e3-4d4f-8e2c-e48f7dff89b6",
+      "code": "C-9575f12d-c79d-4b11-a503-3810309823ad",
+      "userId": "u_1",
+      "username": "cliente1",
+      "productKey": "disney_profile",
+      "productName": "Disney+ (1 Perfil)",
+      "priceCOP": 0,
+      "items": [
+        {
+          "name": "Disney+ (1 Perfil)",
+          "mode": "profile",
+          "email": "andreina@yxsg.com",
+          "password": "1243124",
+          "profile": "4",
+          "code": "43445"
+        }
+      ],
+      "purchasedAt": "2026-01-20T04:56:33.011Z"
+    },
+    {
+      "id": "p_431075d1-6508-4570-b9fb-e048968c6030",
+      "code": "C-3c511212-df9b-48d7-a144-7cf441ff8151",
+      "userId": "u_1",
+      "username": "cliente1",
+      "productKey": "disney_full",
+      "productName": "Disney+ (Cuenta completa)",
+      "priceCOP": 30000,
+      "items": [
+        {
+          "name": "Disney+ (Cuenta completa)",
+          "mode": "full",
+          "email": "safsaf@skff.fff",
+          "password": "gfhfghjfg"
+        }
+      ],
+      "purchasedAt": "2026-01-20T05:20:15.404Z"
+    },
+    {
+      "id": "p_518e0101-9455-4b8c-a148-0ae62271082d",
+      "code": "C-696e55d9-5c5c-4c4b-8bde-d1a3426e6f28",
+      "userId": "u_71555884-da56-427c-91e0-f4626f38e02b",
+      "username": "camila",
+      "productKey": "combo3",
+      "productName": "Combo Netflix + Prime + Disney (Perfiles)",
+      "priceCOP": 20000,
+      "items": [
+        {
+          "name": "Netflix (1 Perfil)",
+          "mode": "profile",
+          "email": "andres@yyopmail.com",
+          "password": "123456",
+          "profile": "11233",
+          "code": "1234"
+        },
+        {
+          "name": "Prime Video (1 Perfil)",
+          "mode": "profile",
+          "email": "andresperez@yopmail.com",
+          "password": "123456",
+          "profile": "5",
+          "code": "00000"
+        },
+        {
+          "name": "Disney+ (1 Perfil)",
+          "mode": "profile",
+          "email": "andreina@yxsg.com",
+          "password": "1243124",
+          "profile": "5",
+          "code": "67689"
+        }
+      ],
+      "purchasedAt": "2026-01-20T07:05:00.084Z"
+    },
+    {
+      "id": "p_5a71493a-cb13-4619-862b-cc1286d86550",
+      "code": "C-03dcec13-744a-418a-9b20-e64e147bd9cb",
+      "userId": "u_71555884-da56-427c-91e0-f4626f38e02b",
+      "username": "camila",
+      "productKey": "combo3",
+      "productName": "Combo Netflix + Prime + Disney (Perfiles)",
+      "priceCOP": 20000,
+      "items": [
+        {
+          "name": "Netflix (1 Perfil)",
+          "mode": "profile",
+          "email": "andres@yyopmail.com",
+          "password": "123456",
+          "profile": "11234",
+          "code": "1234"
+        },
+        {
+          "name": "Prime Video (1 Perfil)",
+          "mode": "profile",
+          "email": "andresperez@yopmail.com",
+          "password": "123456",
+          "profile": "6",
+          "code": "00000"
+        },
+        {
+          "name": "Disney+ (1 Perfil)",
+          "mode": "profile",
+          "email": "andreina@yxsg.com",
+          "password": "1243124",
+          "profile": "6",
+          "code": "77890"
+        }
+      ],
+      "purchasedAt": "2026-01-20T07:05:18.754Z"
+    },
+    {
+      "id": "p_e1ac2a1b-6ff9-4ca4-82ff-3d27417eefe6",
+      "code": "C-0ceff672-e9bc-4d13-a166-35102fc05be2",
+      "userId": "u_71555884-da56-427c-91e0-f4626f38e02b",
+      "username": "camila",
+      "productKey": "combo3",
+      "productName": "Combo Netflix + Prime + Disney (Perfiles)",
+      "priceCOP": 20000,
+      "items": [
+        {
+          "name": "Netflix (1 Perfil)",
+          "mode": "profile",
+          "email": "andres@yyopmail.com",
+          "password": "123456",
+          "profile": "11235",
+          "code": "1234"
+        },
+        {
+          "name": "Prime Video (1 Perfil)",
+          "mode": "profile",
+          "email": "andresperez@yopmail.com",
+          "password": "123456",
+          "profile": "7",
+          "code": "00000"
+        },
+        {
+          "name": "Disney+ (1 Perfil)",
+          "mode": "profile",
+          "email": "andreina@yxsg.com",
+          "password": "1243124",
+          "profile": "7",
+          "code": "77880"
+        }
+      ],
+      "purchasedAt": "2026-01-20T07:05:37.540Z"
+    },
+    {
+      "id": "p_107aec46-e7d5-438c-9183-99e41d9cece2",
+      "code": "C-53a521d4-0fd1-47a4-bf2d-a50361af77a9",
+      "userId": "u_2b579da5-dbca-411a-8776-ea0c01b66842",
+      "username": "andres",
+      "productKey": "netflix_profile",
+      "productName": "Netflix (1 Perfil)",
+      "unitPriceCOP": 15000,
+      "qty": 4,
+      "totalPriceCOP": 60000,
+      "items": [
+        {
+          "name": "Netflix (1 Perfil)",
+          "mode": "profile",
+          "email": "dgre@dggg.gg",
+          "password": "greger",
+          "profile": "11231"
+        },
+        {
+          "name": "Netflix (1 Perfil)",
+          "mode": "profile",
+          "email": "dgre@dggg.gg",
+          "password": "greger",
+          "profile": "11232"
+        },
+        {
+          "name": "Netflix (1 Perfil)",
+          "mode": "profile",
+          "email": "ffdg@dfgdfg.dsg",
+          "password": "sdgsdgds",
+          "profile": "1",
+          "code": "8727"
+        },
+        {
+          "name": "Netflix (1 Perfil)",
+          "mode": "profile",
+          "email": "ffdg@dfgdfg.dsg",
+          "password": "sdgsdgds",
+          "profile": "2",
+          "code": "1994"
+        }
+      ],
+      "purchasedAt": "2026-01-21T05:51:38.277Z"
+    },
+    {
+      "id": "p_b2c842e1-c530-4c2c-adf1-8361ffdb46cc",
+      "code": "C-145122f3-64a4-4560-a7ab-928f631e2864",
+      "userId": "u_2b579da5-dbca-411a-8776-ea0c01b66842",
+      "username": "andres",
+      "productKey": "netflix_profile",
+      "productName": "Netflix (1 Perfil)",
+      "unitPriceCOP": 4,
+      "qty": 1,
+      "totalPriceCOP": 4,
+      "items": [
+        {
+          "name": "Netflix (1 Perfil)",
+          "mode": "profile",
+          "email": "ndsfsd@sdgsdg.sgsd",
+          "password": "sgsdgdsg",
+          "profile": "1",
+          "code": "12124"
+        }
+      ],
+      "purchasedAt": "2026-01-21T06:44:05.679Z"
+    },
+    {
+      "id": "p_11d0bf23-e8cb-4eba-931c-536dd5745508",
+      "code": "C-aed593f1-709e-4236-bd4f-09d71be36296",
+      "userId": "u_2b579da5-dbca-411a-8776-ea0c01b66842",
+      "username": "andres",
+      "productKey": "netflix_profile",
+      "productName": "Netflix (1 Perfil)",
+      "unitPriceCOP": 4,
+      "qty": 4,
+      "totalPriceCOP": 16,
+      "items": [
+        {
+          "name": "Netflix (1 Perfil)",
+          "mode": "profile",
+          "email": "ndsfsd@sdgsdg.sgsd",
+          "password": "sgsdgdsg",
+          "profile": "2",
+          "code": "14124"
+        },
+        {
+          "name": "Netflix (1 Perfil)",
+          "mode": "profile",
+          "email": "ndsfsd@sdgsdg.sgsd",
+          "password": "sgsdgdsg",
+          "profile": "3",
+          "code": "12312"
+        },
+        {
+          "name": "Netflix (1 Perfil)",
+          "mode": "profile",
+          "email": "ndsfsd@sdgsdg.sgsd",
+          "password": "sgsdgdsg",
+          "profile": "4",
+          "code": "12312"
+        },
+        {
+          "name": "Netflix (1 Perfil)",
+          "mode": "profile",
+          "email": "ndsfsd@sdgsdg.sgsd",
+          "password": "sgsdgdsg",
+          "profile": "5",
+          "code": "12312"
+        }
+      ],
+      "purchasedAt": "2026-01-21T06:44:53.831Z"
+    },
+    {
+      "id": "p_31b805e0-a14f-4c5c-bc27-3f6330ca5dca",
+      "code": "C-30938c9c-71ed-4b3c-a711-45de52872ff4",
+      "userId": "u_2b579da5-dbca-411a-8776-ea0c01b66842",
+      "username": "andres",
+      "productKey": "netflix_profile",
+      "productName": "Netflix (1 Perfil)",
+      "unitPriceCOP": 4,
+      "qty": 7,
+      "totalPriceCOP": 28,
+      "items": [
+        {
+          "name": "Netflix (1 Perfil)",
+          "mode": "profile",
+          "email": "ndsfsd@sdgsdg.sgsd",
+          "password": "sgsdgdsg",
+          "profile": "6",
+          "code": "12412"
+        },
+        {
+          "name": "Netflix (1 Perfil)",
+          "mode": "profile",
+          "email": "ndsfsd@sdgsdg.sgsd",
+          "password": "sgsdgdsg",
+          "profile": "7",
+          "code": "12214"
+        },
+        {
+          "name": "Netflix (1 Perfil)",
+          "mode": "profile",
+          "email": "fdgdfg@gmail.com",
+          "password": "reergerg",
+          "profile": "1",
+          "code": "6767"
+        },
+        {
+          "name": "Netflix (1 Perfil)",
+          "mode": "profile",
+          "email": "fdgdfg@gmail.com",
+          "password": "reergerg",
+          "profile": "2",
+          "code": "6767"
+        },
+        {
+          "name": "Netflix (1 Perfil)",
+          "mode": "profile",
+          "email": "fdgdfg@gmail.com",
+          "password": "reergerg",
+          "profile": "3",
+          "code": "67676"
+        },
+        {
+          "name": "Netflix (1 Perfil)",
+          "mode": "profile",
+          "email": "fdgdfg@gmail.com",
+          "password": "reergerg",
+          "profile": "4",
+          "code": "6767"
+        },
+        {
+          "name": "Netflix (1 Perfil)",
+          "mode": "profile",
+          "email": "fdgdfg@gmail.com",
+          "password": "reergerg",
+          "profile": "5",
+          "code": "6767"
+        }
+      ],
+      "purchasedAt": "2026-01-21T17:42:41.826Z"
+    },
+    {
+      "id": "p_c05d72d8-4549-4243-a12e-98a5be3c0d03",
+      "code": "C-85ab0a13-f56c-437d-9f8d-bc6fb1275f9a",
+      "userId": "u_2b579da5-dbca-411a-8776-ea0c01b66842",
+      "username": "andres",
+      "productKey": "netflix_profile",
+      "productName": "Netflix (1 Perfil)",
+      "unitPriceCOP": 4,
+      "qty": 1,
+      "totalPriceCOP": 4,
+      "items": [
+        {
+          "name": "Netflix (1 Perfil)",
+          "mode": "profile",
+          "email": "fdgdfg@gmail.com",
+          "password": "reergerg",
+          "profile": "6",
+          "code": "6767"
+        }
+      ],
+      "purchasedAt": "2026-01-21T18:07:20.000Z"
+    },
+    {
+      "id": "p_4f369b5b-d82d-44d9-ac17-26871cac26a6",
+      "code": "C-2411019a-42c9-4484-a4eb-bf7afd660fcb",
+      "userId": "u_2b579da5-dbca-411a-8776-ea0c01b66842",
+      "username": "andres",
+      "productKey": "netflix_full",
+      "productName": "Netflix (Cuenta completa)",
+      "unitPriceCOP": 30,
+      "qty": 1,
+      "totalPriceCOP": 30,
+      "items": [
+        {
+          "name": "Netflix (Cuenta completa)",
+          "mode": "full",
+          "email": "sahjdsf@gmaioskd.fdhdf",
+          "password": "sfdgdsg"
+        }
+      ],
+      "purchasedAt": "2026-01-22T03:26:09.562Z"
+    },
+    {
+      "id": "p_314e5fb8-8988-40ce-b8c1-47820e52cbf6",
+      "code": "C-8633773d-a787-493d-bf8d-a69ad64d8ad4",
+      "userId": "u_2b579da5-dbca-411a-8776-ea0c01b66842",
+      "username": "andres",
+      "productKey": "netflix_full",
+      "productName": "Netflix (Cuenta completa)",
+      "unitPriceCOP": 15000,
+      "qty": 1,
+      "totalPriceCOP": 15000,
+      "items": [
+        {
+          "name": "Netflix (Cuenta completa)",
+          "mode": "full",
+          "email": "Amer@gmail.com",
+          "password": "123456"
+        }
+      ],
+      "purchasedAt": "2026-01-22T05:23:06.663Z"
+    },
+    {
+      "id": "p_9b217191-0da6-4676-99d6-ef8378a4df23",
+      "code": "C-8d66607e-7501-4504-922f-4f0512866d87",
+      "userId": "u_2b579da5-dbca-411a-8776-ea0c01b66842",
+      "username": "andres",
+      "productKey": "netflix_full",
+      "productName": "Netflix (Cuenta completa)",
+      "unitPriceCOP": 15000,
+      "qty": 1,
+      "totalPriceCOP": 15000,
+      "items": [
+        {
+          "name": "Netflix (Cuenta completa)",
+          "mode": "full",
+          "email": "Hagdvhd@jdjdjd.ddjf",
+          "password": "152626"
+        }
+      ],
+      "purchasedAt": "2026-01-22T05:23:20.127Z"
+    },
+    {
+      "id": "p_7344ccc8-a5b9-48f5-963b-0b8856a77046",
+      "code": "C-7dc967bf-4ecc-4666-ac7c-d5f0bfb27c3d",
+      "userId": "u_2b579da5-dbca-411a-8776-ea0c01b66842",
+      "username": "andres",
+      "productKey": "netflix_profile",
+      "productName": "Netflix (1 Perfil)",
+      "unitPriceCOP": 4,
+      "qty": 1,
+      "totalPriceCOP": 4,
+      "items": [
+        {
+          "name": "Netflix (1 Perfil)",
+          "mode": "profile",
+          "email": "fdgdfg@gmail.com",
+          "password": "reergerg",
+          "profile": "7",
+          "code": "7676"
+        }
+      ],
+      "purchasedAt": "2026-01-22T05:43:50.311Z"
+    },
+    {
+      "id": "p_2a2a1c08-70ca-4cc0-8e4f-cad098fb4415",
+      "code": "C-7679f84c-08a1-4e72-a2fa-65c4a121cd02",
+      "userId": "u_2b579da5-dbca-411a-8776-ea0c01b66842",
+      "username": "andres",
+      "productKey": "disney_full",
+      "productName": "Disney+ (Cuenta completa)",
+      "unitPriceCOP": 30000,
+      "qty": 1,
+      "totalPriceCOP": 30000,
+      "items": [
+        {
+          "name": "Disney+ (Cuenta completa)",
+          "mode": "full",
+          "email": "gnfg@fbtt.rtrt",
+          "password": "rtnrtnrtn"
+        }
+      ],
+      "purchasedAt": "2026-01-22T05:43:58.312Z"
+    },
+    {
+      "id": "p_65db1308-e9c4-46d4-b123-29fc8f2c5ded",
+      "code": "C-83e1efcd-b6ef-49bd-8eb6-37c81272086f",
+      "userId": "u_ecf40458-99ab-49f8-ad44-fb146518de98",
+      "username": "luis1",
+      "productKey": "netflix_full",
+      "productName": "Netflix (Cuenta completa)",
+      "unitPriceCOP": 10,
+      "qty": 1,
+      "totalPriceCOP": 10,
+      "items": [
+        {
+          "name": "Netflix (Cuenta completa)",
+          "mode": "full",
+          "email": "andrea@gmail.com",
+          "password": "12345673"
+        }
+      ],
+      "purchasedAt": "2026-01-22T17:08:34.636Z"
+    },
+    {
+      "id": "p_a947c093-7bcb-4934-bf45-4353d4b8be7d",
+      "code": "C-6ae2da51-ad4b-42cf-8101-69be5fadd2f0",
+      "userId": "u_2b579da5-dbca-411a-8776-ea0c01b66842",
+      "username": "andres",
+      "productKey": "combo3",
+      "productName": "Combo Netflix + Prime + Disney (Perfiles)",
+      "unitPriceCOP": 20000,
+      "qty": 1,
+      "totalPriceCOP": 20000,
+      "items": [
+        {
+          "name": "Netflix (1 Perfil)",
+          "mode": "profile",
+          "email": "2wsdqw@hdsgd.dd",
+          "password": "asfsaf",
+          "profile": "1",
+          "code": "1212"
+        },
+        {
+          "name": "Prime Video (1 Perfil)",
+          "mode": "profile",
+          "email": "fdgfdg@hjdfhf.llj",
+          "password": "fdgdfgg",
+          "profile": "1",
+          "code": "3453"
+        },
+        {
+          "name": "Disney+ (1 Perfil)",
+          "mode": "profile",
+          "email": "uudiid@ghhjdj.ddd",
+          "password": "sfwefwef",
+          "profile": "1",
+          "code": "3453"
+        }
+      ],
+      "purchasedAt": "2026-01-22T18:27:46.316Z"
+    },
+    {
+      "id": "p_021d7d61-0d04-4ccc-9202-630e03d7fac9",
+      "code": "C-5a213456-b36c-476b-bb90-37e42ddc609d",
+      "userId": "u_2b579da5-dbca-411a-8776-ea0c01b66842",
+      "username": "andres",
+      "productKey": "prime_profile",
+      "productName": "Prime Video (1 Perfil)",
+      "unitPriceCOP": 5,
+      "qty": 2,
+      "totalPriceCOP": 10,
+      "items": [
+        {
+          "name": "Prime Video (1 Perfil)",
+          "mode": "profile",
+          "email": "fdgfdg@hjdfhf.llj",
+          "password": "fdgdfgg",
+          "profile": "2",
+          "code": "3432"
+        },
+        {
+          "name": "Prime Video (1 Perfil)",
+          "mode": "profile",
+          "email": "fdgfdg@hjdfhf.llj",
+          "password": "fdgdfgg",
+          "profile": "3",
+          "code": "3664"
+        }
+      ],
+      "purchasedAt": "2026-01-22T18:29:03.557Z"
+    },
+    {
+      "id": "p_2665db6c-d17f-4151-b66f-28f51376c1b3",
+      "code": "C-5afd88f5-c01b-4ebb-9f68-a02e2c89fbe6",
+      "userId": "u_2b579da5-dbca-411a-8776-ea0c01b66842",
+      "username": "andres",
+      "productKey": "netflix_giftcard15",
+      "productName": "Giftcard Netflix USA $15",
+      "unitPriceCOP": 16,
+      "qty": 1,
+      "totalPriceCOP": 16,
+      "items": [
+        {
+          "name": "Giftcard Netflix USA $15",
+          "mode": "giftcard",
+          "code": "NAAAA63GD7DHDD"
+        }
+      ],
+      "purchasedAt": "2026-01-23T23:07:21.011Z"
+    },
+    {
+      "id": "p_3a9bdd5e-6dee-4034-8ba8-8f87a01e33bf",
+      "code": "C-f14c2f87-2f39-49e0-992e-589b3a335e52",
+      "userId": "u_2b579da5-dbca-411a-8776-ea0c01b66842",
+      "username": "andres",
+      "productKey": "netflix_giftcard15",
+      "productName": "Giftcard Netflix USA $15",
+      "unitPriceCOP": 16,
+      "qty": 2,
+      "totalPriceCOP": 32,
+      "items": [
+        {
+          "name": "Giftcard Netflix USA $15",
+          "mode": "giftcard",
+          "code": "JDSJJDD234FFF43"
+        },
+        {
+          "name": "Giftcard Netflix USA $15",
+          "mode": "giftcard",
+          "code": "ADSAFEWFWE44"
+        }
+      ],
+      "purchasedAt": "2026-01-23T23:07:50.895Z"
+    },
+    {
+      "id": "p_2a55a624-f25b-4d03-8d0c-6942fcc94115",
+      "code": "C-d667b076-d1a1-420d-bca3-7dfd3158f1cf",
+      "userId": "u_2b579da5-dbca-411a-8776-ea0c01b66842",
+      "username": "andres",
+      "productKey": "netflix_full",
+      "productName": "Netflix (Cuenta completa)",
+      "unitPriceCOP": 10,
+      "qty": 3,
+      "totalPriceCOP": 30,
+      "items": [
+        {
+          "name": "Netflix (Cuenta completa)",
+          "mode": "full",
+          "email": "andrea@yopmail.com",
+          "password": "123456"
+        },
+        {
+          "name": "Netflix (Cuenta completa)",
+          "mode": "full",
+          "email": "maicol@hjgtsrf.rwe",
+          "password": "carlosperes"
+        },
+        {
+          "name": "Netflix (Cuenta completa)",
+          "mode": "full",
+          "email": "camilo@yopmail.com",
+          "password": "437625"
+        }
+      ],
+      "purchasedAt": "2026-01-24T06:44:19.149Z"
+    }
+  ]
+}

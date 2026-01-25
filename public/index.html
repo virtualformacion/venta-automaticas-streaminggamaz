@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PaginaVentasRojas - Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="login">
+  <div class="container">
+    <div class="card">
+      <h2>PaginaVentasRojas - Ingreso</h2>
+      <input id="username" placeholder="Usuario" />
+      <input id="password" type="password" placeholder="Contraseña" />
+      <div class="row">
+        <button id="btnUser">Acceso Clientes</button>
+        <button id="btnAdmin">Acceso Administrador</button>
+      </div>
+      <div id="msg" style="margin-top:10px;"></div>
+
+      <div id="registerArea" style="margin-top:12px; display:none;">
+        <button id="btnRegister" type="button">Registrarse</button>
+        <div id="registerPanel" style="display:none; margin-top:10px;">
+          <input id="regUsername" placeholder="Nuevo usuario (minúsculas y números)" />
+          <input id="regPassword" type="password" placeholder="Nueva contraseña (minúsculas y números)" />
+          <button id="regSubmit" type="button" style="margin-top:8px;">Crear cuenta</button>
+          <small id="regMsg" style="display:block; margin-top:8px;"></small>
+        </div>
+      </div>
+
+      <small>Nota: <b>Por favor verificar bien sus datos de acceso antes de acceder.</b> / <b>No usar mayusculas ni caracteres especiales / <b> Presionar botòn de inicio de sesion correspondiente</small>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

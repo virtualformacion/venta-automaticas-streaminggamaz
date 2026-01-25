@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>PaginaVentasRojas - Admin</title>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body data-page="admin">
+<div class="container"><div class="appShell"><nav class="sidebar" id="sidebar"><div class="sidebarInner"><div class="sidebarBrand">Panel Admin</div><div class="navList"><button class="navBtn" data-admin-nav="inicio" type="button">🏠 Inicio</button><button class="navBtn" data-admin-nav="usuarios" type="button">👤 Administrar usuarios</button><button class="navBtn" data-admin-nav="productos" type="button">📦 Agregar stock / Productos</button><button class="navBtn" data-admin-nav="stock" type="button">🧾 Stock agregado</button><button class="navBtn" data-admin-nav="compras" type="button">🛒 Compras</button></div></div></nav><div class="sidebarOverlay" id="sidebarOverlay"></div><main class="mainContent"><div class="card">
+<div style="display:flex; justify-content:space-between; align-items:center;"><div class="headerLeft"><button class="btnSmall" id="menuToggle" type="button">☰ Menú</button><h2>PaginaVentasRojas - Administración</h2></div><button id="logout">Salir</button></div>
+<div class="adminSearchWrap" id="adminSearchWrap">
+  <input class="inTable adminSearchInput" id="adminSearchText" type="text" placeholder="Buscar… (usuario, correo, contraseña, código)"/>
+  <button class="btnSmall" id="adminSearchClear" type="button">Limpiar</button>
+</div>
+<div class="adminPassBox" style="margin-top:12px;">
+<button class="btnSmall" id="toggleAdminPass" type="button">Restablecer contraseña admin</button>
+<div id="adminPassPanel" style="display:none; margin-top:10px;">
+<input class="inTable" id="adminPassCurrent" placeholder="Clave actual" type="password"/>
+<div style="display:flex; gap:6px; align-items:center; margin-top:8px;">
+<input class="inTable" id="adminPassNew" placeholder="Nueva clave (solo letras y números)" style="flex:1;" type="password"/>
+<button class="btnSmall" id="toggleAdminPassView" type="button">👁</button>
+</div>
+<button class="btnSmall" id="adminPassSave" style="margin-top:10px;" type="button">Cambiar contraseña admin</button>
+<small id="adminPassMsg" style="display:block; margin-top:8px;"></small>
+</div>
+</div>
+
+<div class="adminPassBox" style="margin-top:12px;">
+  <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+    <label style="display:flex; align-items:center; gap:8px;">
+      <input type="checkbox" id="allowSelfRegisterChk" />
+      Habilitar botón "Registrarse" en login
+    </label>
+    <button class="btnSmall" id="saveAllowSelfRegister" type="button">Guardar</button>
+  </div>
+  <small id="allowSelfRegisterMsg" style="display:block; margin-top:8px;"></small>
+</div>
+<div id="fx"></div>
+</div><section class="sectionWrap" data-admin-section="inicio"><div class="card" id="stockSummaryCard">
+<h3>Resumen de stock</h3>
+<small>Estado del Stock: ✅ Excelente (más de 10) · ⚠️ Regular (2 a 10) · 🚨 Agregar stock urgente(1 o 0)</small>
+<div id="stockSummary"></div>
+</div><div class="card" id="createUserCard">
+<h3>Crear usuario</h3>
+<div class="row">
+</div>
+<div class="row">
+<input id="newUser" placeholder="Usuario (letras o números)"/>
+<input id="newPass" placeholder="Contraseña (letras o números)"/>
+</div>
+<input class="inTable" id="newExp" type="date"/>
+<input id="newBalance" placeholder="Saldo inicial para el usuario (opcional)"/>
+<button id="createUser">Crear</button>
+</div></section><section class="sectionWrap" data-admin-section="usuarios"><div class="card" id="usersCard">
+<h3>Usuarios</h3>
+<div id="users"></div>
+</div></section><section class="sectionWrap" data-admin-section="productos"><div class="card" id="productsCard">
+<h3>Stock / Productos</h3>
+<small>Tablas separadas: cuentas completas, perfiles y combos. El precio lo ajustas aquí.</small>
+<div id="products"></div>
+</div></section><section class="sectionWrap" data-admin-section="stock"><div class="card" id="stockCard">
+<h3>Stock agregado</h3>
+<div id="stock"></div>
+</div></section><section class="sectionWrap" data-admin-section="compras"><div class="card" id="purchasesCard">
+<h3>Compras</h3>
+<div id="purchases"></div>
+</div></section></main></div></div>
+<script src="app.js"></script>
+</body>
+</html>

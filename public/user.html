@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>PaginaVentasRojas - Usuario</title>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body data-page="user">
+<div class="container"><div class="appShell"><nav class="sidebar" id="sidebar"><div class="sidebarInner"><div class="sidebarBrand">Menú</div><div class="navList"><button class="navBtn" data-user-nav="servicios" type="button">🧩 Servicios</button><button class="navBtn" data-user-nav="miscompras" type="button">🧾 Mis compras</button></div></div></nav><div class="sidebarOverlay" id="sidebarOverlay"></div><main class="mainContent"><div class="card">
+<!-- Header: Bienvenido izquierda / Salir derecha -->
+<div style="display:flex; justify-content:space-between; align-items:center; gap:12px;"><div class="headerLeft"><button class="btnSmall" id="menuToggle" type="button">☰ Menú</button><h2 style="margin:0;">
+          Bienvenido: <span id="who"></span>
+</h2></div><button class="btnSmall" id="logout" style="width:auto; padding:8px 12px;" type="button">
+          Salir
+        </button></div>
+<!-- Botón cambiar contraseña debajo del Bienvenido -->
+<div style="margin:12px 0 8px 0;">
+<button class="btnSmall" id="toggleUserPass" type="button">
+          Cambiar mi contraseña
+        </button>
+<!-- Panel (inicia oculto) -->
+<div id="userPassPanel" style="display:none; margin-top:10px;">
+<div style="display:flex; flex-direction:column; gap:8px; max-width:320px;">
+<input class="inTable" id="userPassCurrent" placeholder="Clave actual" type="password"/>
+<div style="display:flex; gap:8px; align-items:center;">
+<input class="inTable" id="userPassNew" placeholder="Nueva clave (solo letras y números)" style="flex:1;" type="password"/>
+<button class="btnSmall" id="toggleUserPassEye" type="button">
+                👁 ver
+              </button>
+</div>
+<button class="btnSmall" id="userPassSave" type="button">
+              Guardar nueva contraseña
+            </button>
+<small id="userPassMsg"></small>
+</div>
+</div>
+</div>
+<div>Saldo: <b id="bal"></b></div>
+<a class="btnTopup" href="https://wa.me/573206199480?text=Deseo%20recargar%20saldo%20a%20mi%20usuario%20de%20la%20web." id="topupBtn" rel="noopener" target="_blank">
+        Recargar saldo
+      </a>
+<small id="fx"></small>
+</div><section class="sectionWrap" data-user-section="servicios"><div class="card" id="servicesCard">
+<h3>Productos disponibles</h3>
+<div class="grid" id="grid"></div>
+</div></section><section class="sectionWrap" data-user-section="miscompras"><div class="card" id="myPurchasesCard">
+<h3>Mis compras</h3>
+<div id="myPurchases"></div>
+</div></section></main></div></div>
+<script src="app.js"></script>
+<a aria-label="Contactar soporte por WhatsApp" class="support-float" href="https://wa.me/573206199480" rel="noopener" target="_blank" title="Contactar soporte">
+<span aria-hidden="true" class="support-icon">🎧</span>
+<span class="support-text">Contactar soporte</span>
+</a>
+</body>
+</html>
