@@ -112,11 +112,6 @@
             "password": "sfwefwef",
             "profiles": [
               {
-                "name": "2",
-                "code": "3234",
-                "available": true
-              },
-              {
                 "name": "3",
                 "code": "4366",
                 "available": true
