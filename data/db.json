@@ -168,7 +168,15 @@
       "image": "gift.jpg",
       "priceCOP": 16,
       "inventory": {
-        "giftcards": []
+        "giftcards": [
+          {
+            "id": "gc_162bc121-9db7-4c89-9562-ada0e6ad56c4",
+            "code": "NDSNFWJKFWEK43",
+            "available": true,
+            "soldAt": null,
+            "addedAt": "2026-01-25T06:26:48.411Z"
+          }
+        ]
       },
       "enabled": true
     }
