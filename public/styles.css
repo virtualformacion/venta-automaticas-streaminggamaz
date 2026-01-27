@@ -439,5 +439,5 @@ input.inTable {
 }
 
 #stock input[data-prof-edit-code]{
-  min-width: 10px !important; /* código/perfil */
+  min-width: 1ch !important; /* código/perfil */
 }
