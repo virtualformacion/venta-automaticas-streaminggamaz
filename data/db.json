@@ -70,7 +70,7 @@
       "inventory": {
         "profileAccounts": []
       },
-      "enabled": false
+      "enabled": true
     },
     {
       "key": "disney_full",
