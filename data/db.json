@@ -117,6 +117,19 @@
               }
             ],
             "addedAt": "2026-01-27T16:52:57.319Z"
+          },
+          {
+            "id": "pa_9bf6435e-3852-4c51-ab09-e7762363b8f1",
+            "email": "mar1993hoy+freezery@gmail.com",
+            "password": "NAAHLD",
+            "profiles": [
+              {
+                "name": "2",
+                "code": "1994",
+                "available": true
+              }
+            ],
+            "addedAt": "2026-01-27T17:11:09.678Z"
           }
         ]
       },
