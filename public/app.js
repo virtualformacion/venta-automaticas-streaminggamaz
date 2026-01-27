@@ -1339,14 +1339,14 @@ await saveDB(d, `Admin edit user ${u.username}`);
       p.inventory = p.inventory || {};
       p.inventory.profileAccounts = p.inventory.profileAccounts || [];
 
-      // Evita duplicados de códigos en el producto
-      const existingCodes = new Set();
-      for (const acc of p.inventory.profileAccounts) {
-        for (const pr of (acc.profiles || [])) existingCodes.add(pr.code);
-      }
-      for (const pr of profiles) {
-        if (existingCodes.has(pr.code)) return alert(`El código ${pr.code} ya existe en este producto. Usa otro.`);
-      }
+      // Evita duplicados de códigos en el producto  si quiero que funcione de nuebo quitarle //
+     // const existingCodes = new Set();
+    //  for (const acc of p.inventory.profileAccounts) {
+    //    for (const pr of (acc.profiles || [])) existingCodes.add(pr.code);
+     // }
+   //   for (const pr of profiles) {
+    //    if (existingCodes.has(pr.code)) return alert(`El código ${pr.code} ya existe en este producto. Usa otro.`);
+  //    }
 
       p.inventory.profileAccounts.push({
         id: "pa_" + uuid(),
