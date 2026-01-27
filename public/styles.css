@@ -409,3 +409,34 @@ input.inTable {
   background: #1b5e20;
   transform: scale(1.05);
 }
+
+//para que se vea completos en stock agregados los datos   
+
+/* ===== Stock agregado: inputs más anchos para ver correos y perfiles completos ===== */
+#stock table th,
+#stock table td{
+  vertical-align: top;
+}
+
+#stock .inTable{
+  min-width: 260px; /* ancho mínimo general para que no se vea cortado */
+}
+
+/* Inputs específicos (si quieres más control) */
+#stock input[data-full-edit-email],
+#stock input[data-prof-acc-email]{
+  min-width: 320px; /* correos */
+}
+
+#stock input[data-full-edit-pass],
+#stock input[data-prof-acc-pass]{
+  min-width: 240px; /* contraseñas */
+}
+
+#stock input[data-prof-edit-name]{
+  min-width: 260px; /* nombre del perfil */
+}
+
+#stock input[data-prof-edit-code]{
+  min-width: 180px; /* código/perfil */
+}
