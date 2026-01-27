@@ -86,6 +86,24 @@
               }
             ],
             "addedAt": "2026-01-27T16:51:10.986Z"
+          },
+          {
+            "id": "pa_422dc851-79ca-4045-8404-759aa3b0498a",
+            "email": "mar1993hoy+arroz@gmail.com",
+            "password": "NAARFG",
+            "profiles": [
+              {
+                "name": "2",
+                "code": "1994",
+                "available": true
+              },
+              {
+                "name": "4",
+                "code": "2018",
+                "available": true
+              }
+            ],
+            "addedAt": "2026-01-27T16:52:00.963Z"
           }
         ]
       },
