@@ -56,7 +56,14 @@
       "image": "netflix.jpg",
       "priceCOP": 10,
       "inventory": {
-        "fullAccounts": []
+        "fullAccounts": [
+          {
+            "id": "fa_6c87c151-2fae-4f41-8188-b3c8499a6ff7",
+            "email": "mar1993hoy+notaria@gmail.com",
+            "password": "123456",
+            "addedAt": "2026-01-27T19:29:14.122Z"
+          }
+        ]
       },
       "enabled": true
     },
