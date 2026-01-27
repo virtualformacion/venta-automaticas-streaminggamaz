@@ -94,26 +94,6 @@
       "inventory": {
         "profileAccounts": [
           {
-            "id": "pa_bc3916c2-f11f-4fed-9e75-27e8ffed13e7",
-            "email": "ANDREINA@gmail.com",
-            "password": "432342323",
-            "profiles": [
-              {
-                "name": "1",
-                "code": "32544",
-                "available": false,
-                "soldAt": "2026-01-25T06:28:09.625Z"
-              },
-              {
-                "name": "2",
-                "code": "43543",
-                "available": false,
-                "soldAt": "2026-01-25T06:28:09.625Z"
-              }
-            ],
-            "addedAt": "2026-01-25T06:26:27.296Z"
-          },
-          {
             "id": "pa_bfd1b6ec-370c-4123-94d8-3369618fa04b",
             "email": "mar1993hoy+d87@gmail.com",
             "password": "DISNEY2434",
@@ -214,29 +194,7 @@
       "image": "gift.jpg",
       "priceCOP": 16,
       "inventory": {
-        "giftcards": [
-          {
-            "id": "gc_162bc121-9db7-4c89-9562-ada0e6ad56c4",
-            "code": "NDSNFWJKFWEK43",
-            "available": false,
-            "soldAt": "2026-01-25T06:29:35.108Z",
-            "addedAt": "2026-01-25T06:26:48.411Z"
-          },
-          {
-            "id": "gc_9bd2f7aa-a2ff-4d7d-b90f-287db2ed7aca",
-            "code": "JHGHJGJGJFHJJJGJH",
-            "available": false,
-            "soldAt": "2026-01-25T15:35:10.510Z",
-            "addedAt": "2026-01-25T15:33:25.741Z"
-          },
-          {
-            "id": "gc_af258fc8-b46d-4893-b086-fcc67b416662",
-            "code": "HGHFGHGFHGHGHGHGH",
-            "available": false,
-            "soldAt": "2026-01-25T15:35:10.510Z",
-            "addedAt": "2026-01-25T15:33:25.741Z"
-          }
-        ]
+        "giftcards": []
       },
       "enabled": true
     }
