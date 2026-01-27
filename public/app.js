@@ -959,7 +959,7 @@ const filteredUsers = data.users.filter(u => {
           const profiles = profilesArr.map((pr, idx) => `
             <div style="display:flex; gap:8px; margin-top:6px; align-items:center;">
               <input class="inTable" style="flex:1" data-prof-edit-name="${prod.key}" data-acc-id="${acc.id}" data-pidx="${idx}" value="${pr.name || ""}">
-              <input class="inTable" style="width:65px" data-prof-edit-code="${prod.key}" data-acc-id="${acc.id}" data-pidx="${idx}" value="${pr.code || ""}">
+              <input class="inTable" style="width:60px" data-prof-edit-code="${prod.key}" data-acc-id="${acc.id}" data-pidx="${idx}" value="${pr.code || ""}">
               <span class="badge">${pr.available ? "Disponible" : "Vendido"}</span>
               <button class="btnSmall btn-success" data-prof-stock-save="1" data-key="${prod.key}" data-acc="${acc.id}" data-pidx="${idx}">Guardar</button>
               <button class="btnSmall btn-danger" data-prof-stock-del="1" data-key="${prod.key}" data-acc="${acc.id}" data-pidx="${idx}">Eliminar</button>
@@ -1298,6 +1298,12 @@ await saveDB(d, `Admin edit user ${u.username}`);
       const p = d.services.find(x => x.key === key);
       p.inventory = p.inventory || {};
       p.inventory.fullAccounts = p.inventory.fullAccounts || [];
+      // ✅ Evitar EMAIL duplicado en cuentas completas (por producto)
+      const normEmail = (s) => (s || "").trim().toLowerCase();
+      const newEmail = normEmail(email);
+      const existsEmail = (p.inventory.fullAccounts || []).some(a => normEmail(a.email) === newEmail);
+      if (existsEmail) return alert(`❌ El correo ${email} ya existe en CUENTAS COMPLETAS de este producto.`);
+
       p.inventory.fullAccounts.push({ id: "fa_" + uuid(), email, password: pass, addedAt: nowISO() });
 
       await saveDB(d, `Admin add full ${key}`);
@@ -1338,6 +1344,12 @@ await saveDB(d, `Admin edit user ${u.username}`);
 
       p.inventory = p.inventory || {};
       p.inventory.profileAccounts = p.inventory.profileAccounts || [];
+      // ✅ Evitar EMAIL duplicado en cuentas de perfiles (por producto)
+      const normEmail = (s) => (s || "").trim().toLowerCase();
+      const newEmail = normEmail(email);
+      const existsEmail = (p.inventory.profileAccounts || []).some(a => normEmail(a.email) === newEmail);
+      if (existsEmail) return alert(`❌ El correo ${email} ya existe en CUENTAS DE PERFILES de este producto.`);
+
 
       // Evita duplicados de códigos en el producto  si quiero que funcione de nuebo quitarle //
      // const existingCodes = new Set();
@@ -1376,6 +1388,13 @@ await saveDB(d, `Admin edit user ${u.username}`);
         if (!/^[A-Z0-9]{8,32}$/.test(c)) {
           return alert(`Código inválido: ${c}\n\nUsa solo letras mayúsculas y números (8-32 caracteres).`);
         }
+      }
+
+      // ✅ Evitar duplicados dentro del mismo pegado (textarea)
+      const batch = new Set();
+      for (const c of codes) {
+        if (batch.has(c)) return alert(`❌ Código repetido en el pegado: ${c}`);
+        batch.add(c);
       }
 
       const { data: d } = await loadDB();
