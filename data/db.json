@@ -270,7 +270,15 @@
       "image": "gift.jpg",
       "priceCOP": 16,
       "inventory": {
-        "giftcards": []
+        "giftcards": [
+          {
+            "id": "gc_ec3f338e-d018-410a-9a69-e9a3b658853d",
+            "code": "ASFDSAFSAFSAFSAA",
+            "available": true,
+            "soldAt": null,
+            "addedAt": "2026-01-27T19:56:49.729Z"
+          }
+        ]
       },
       "enabled": true
     }
