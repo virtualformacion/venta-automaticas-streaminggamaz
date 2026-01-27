@@ -959,7 +959,7 @@ const filteredUsers = data.users.filter(u => {
           const profiles = profilesArr.map((pr, idx) => `
             <div style="display:flex; gap:8px; margin-top:6px; align-items:center;">
               <input class="inTable" style="flex:1" data-prof-edit-name="${prod.key}" data-acc-id="${acc.id}" data-pidx="${idx}" value="${pr.name || ""}">
-              <input class="inTable" style="width:50px" data-prof-edit-code="${prod.key}" data-acc-id="${acc.id}" data-pidx="${idx}" value="${pr.code || ""}">
+              <input class="inTable" style="width:65px" data-prof-edit-code="${prod.key}" data-acc-id="${acc.id}" data-pidx="${idx}" value="${pr.code || ""}">
               <span class="badge">${pr.available ? "Disponible" : "Vendido"}</span>
               <button class="btnSmall btn-success" data-prof-stock-save="1" data-key="${prod.key}" data-acc="${acc.id}" data-pidx="${idx}">Guardar</button>
               <button class="btnSmall btn-danger" data-prof-stock-del="1" data-key="${prod.key}" data-acc="${acc.id}" data-pidx="${idx}">Eliminar</button>
