@@ -68,7 +68,26 @@
       "image": "netflix.jpg",
       "priceCOP": 4,
       "inventory": {
-        "profileAccounts": []
+        "profileAccounts": [
+          {
+            "id": "pa_51e95a9d-7055-4b55-b91e-b6ccc20da47c",
+            "email": "m.ar.1.9.9.3.hoy@gmail.com",
+            "password": "NAALKJ",
+            "profiles": [
+              {
+                "name": "1",
+                "code": "8727",
+                "available": true
+              },
+              {
+                "name": "3",
+                "code": "2020",
+                "available": true
+              }
+            ],
+            "addedAt": "2026-01-27T16:51:10.986Z"
+          }
+        ]
       },
       "enabled": true
     },
