@@ -435,9 +435,9 @@ input.inTable {
 }
 
 #stock input[data-prof-edit-name]{
-  min-width: 150px; /* nombre del perfil */
+  min-width: 70px; /* nombre del perfil */
 }
 
 #stock input[data-prof-edit-code]{
-  min-width: 150px; /* código/perfil */
+  min-width: 60px; /* código/perfil */
 }
