@@ -979,12 +979,16 @@ const filteredUsers = data.users.filter(u => {
         const rowsSold = sold.map(acc => `
           <tr>
             <td><b>${prod.name}</b><br/><small>${prod.key}</small></td>
-            <td><input class="inTable" value="${acc.email || ""}" readonly></td>
-            <td><input class="inTable" value="${acc.password || ""}" readonly></td>
+            <td><input class="inTable" data-full-edit-email="${prod.key}" data-full-id="${acc.id}" value="${acc.email || ""}" readonly></td>
+            <td><input class="inTable" data-full-edit-pass="${prod.key}" data-full-id="${acc.id}" value="${acc.password || ""}" readonly></td>
             <td><span class="badge">Vendido</span></td>
             <td><small>${acc.soldAt ? new Date(acc.soldAt).toLocaleString() : ""}</small></td>
-            <td><small>-</small></td>
+            <td>
+              <button class="btnSmall btn-success" data-full-stock-save="1" data-key="${prod.key}" data-id="${acc.id}">Guardar</button>
+              <button class="btnSmall btn-danger" data-full-stock-del="1" data-key="${prod.key}" data-id="${acc.id}">Eliminar</button>
+            </td>
           </tr>
+  
         `);
 
         return [...rowsAvail, ...rowsSold];
@@ -1500,7 +1504,8 @@ await saveDB(d, `Admin edit user ${u.username}`);
 
       const { data: d } = await loadDB();
       const prod = d.services.find(s => s.key === key);
-      const acc = prod?.inventory?.fullAccounts?.find(a => a.id === id);
+      const inv = prod?.inventory || (prod.inventory = {});
+      const acc = (inv.fullAccounts || []).find(a => a.id === id) || (inv.fullAccountsSold || []).find(a => a.id === id);
       if (!acc) return alert("Cuenta no encontrada.");
 
       acc.email = email;
@@ -1567,9 +1572,12 @@ await saveDB(d, `Admin edit user ${u.username}`);
 
       const { data: d } = await loadDB();
       const prod = d.services.find(s => s.key === key);
-      if (!prod?.inventory?.fullAccounts) return alert("No hay stock.");
+      const inv = prod?.inventory || (prod.inventory = {});
+      const hasAny = Array.isArray(inv.fullAccounts) || Array.isArray(inv.fullAccountsSold);
+      if (!hasAny) return alert("No hay stock.");
 
-      prod.inventory.fullAccounts = prod.inventory.fullAccounts.filter(a => a.id !== id);
+      if (Array.isArray(inv.fullAccounts)) inv.fullAccounts = inv.fullAccounts.filter(a => a.id !== id);
+      if (Array.isArray(inv.fullAccountsSold)) inv.fullAccountsSold = inv.fullAccountsSold.filter(a => a.id !== id);
 
       await saveDB(d, `Admin delete full stock ${key} ${id}`);
       alert("Eliminado ✅");
