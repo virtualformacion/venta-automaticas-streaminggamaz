@@ -24,7 +24,7 @@
     }
   ],
   "services": [
-      {
+    {
       "key": "netflix_full",
       "type": "full",
       "serviceKey": "netflix",
@@ -32,7 +32,14 @@
       "image": "netflix.jpg",
       "priceCOP": 10,
       "inventory": {
-        "fullAccounts": []
+        "fullAccounts": [
+          {
+            "id": "fa_2dcb0847-662d-4268-8c45-3b184591c3f9",
+            "email": "wefew@dsds.dg",
+            "password": "dsgdsg",
+            "addedAt": "2026-01-28T15:50:16.079Z"
+          }
+        ]
       },
       "enabled": true
     },
