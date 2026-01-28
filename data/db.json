@@ -11,7 +11,7 @@
       "username": "andres",
       "password": "111111",
       "expiresAt": "2026-01-30",
-      "balanceCOP": 8278,
+      "balanceCOP": 8268,
       "createdAt": "2026-01-21T05:50:37.232Z"
     },
     {
@@ -32,14 +32,7 @@
       "image": "netflix.jpg",
       "priceCOP": 10,
       "inventory": {
-        "fullAccounts": [
-          {
-            "id": "fa_969d8cf2-3b80-48de-9ef4-6d6a29a764d1",
-            "email": "rergttt@dsfewr.ewfwe",
-            "password": "wefwefew",
-            "addedAt": "2026-01-28T18:18:03.772Z"
-          }
-        ],
+        "fullAccounts": [],
         "fullAccountsSold": [
           {
             "id": "fa_644be80d-4c0c-4eb7-b19e-3754eb0cd35d",
@@ -54,6 +47,13 @@
             "password": "dsfdsfds",
             "addedAt": "2026-01-28T16:19:08.946Z",
             "soldAt": "2026-01-28T17:57:01.009Z"
+          },
+          {
+            "id": "fa_969d8cf2-3b80-48de-9ef4-6d6a29a764d1",
+            "email": "rergttt@dsfewr.ewfwe",
+            "password": "wefwefew",
+            "addedAt": "2026-01-28T18:18:03.772Z",
+            "soldAt": "2026-01-28T18:18:38.753Z"
           }
         ]
       },
@@ -1387,6 +1387,27 @@
         }
       ],
       "purchasedAt": "2026-01-28T18:02:35.247Z"
+    },
+    {
+      "id": "p_93572e06-f79f-42ba-8336-09e2d3adc3a6",
+      "code": "C-a967ae5f-05ca-444f-8aa7-e69975009706",
+      "userId": "u_2b579da5-dbca-411a-8776-ea0c01b66842",
+      "username": "andres",
+      "productKey": "netflix_full",
+      "productName": "Netflix<br>(Cuenta completa)",
+      "unitPriceCOP": 10,
+      "qty": 1,
+      "totalPriceCOP": 10,
+      "items": [
+        {
+          "name": "Netflix<br>(Cuenta completa)",
+          "mode": "full",
+          "email": "rergttt@dsfewr.ewfwe",
+          "password": "wefwefew",
+          "deliveryText": "Netflix Premium\nEmail: rergttt@dsfewr.ewfwe\nContraseña: wefwefew\nPerfiles asignados:\n-<<<\n\nPerfil #1,Pin:8727 🔐\nPerfil #2,Pin:1994 🔐\nPerfil #3,Pin:2020 🔐\nPerfil #4,Pin:2018 🔐\nPerfil #5,Pin:2190 🔐\n\n🍿 Pruebas y me cuentas cualquier novedad😊\n\nCONDICIONES\n- 🚫NO cambiar nombres\n- 🚫NO cambiar imagen \n- 🚫NO cambiar Pin ni contraseña \n- 🚫NO añadir miembro extra\n- 📲1 solo dispositivo por pantalla comprada.\n\n⚠️Si incumples alguna de estas condiciones, pierdes la cuenta sin derecho a garantía o devolución de dinero.⚠️\n\nLa duración de la cuenta es de 27 a 28 días. Por cada mes adquirido.\n\nPAGINA CODIGOS HOGAR\n🌐https://code-gamaz.netlify.app"
+        }
+      ],
+      "purchasedAt": "2026-01-28T18:18:38.754Z"
     }
   ]
 }
