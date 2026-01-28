@@ -2009,8 +2009,8 @@ const itemsText = (p.items || []).map(it => {
       const totalPrice = unitPrice * qty;
       if ((user.balanceCOP || 0) < totalPrice) return alert("Saldo insuficiente.");
 
-      const cleanName = prod.name.replace(/<br>\s*\/?>/gi, ' ');
-      const ok = confirm(`¿Confirmas comprar ${qty} unidad(es) de ${prod.name} por ${toCOP(totalPrice)}?`);
+     const cleanName = prod.name.replace(/<br>\s*\/?>/gi, ' ');
+     const ok = confirm(¿Confirmas comprar ${qty} unidad(es) de ${prod.name} por ${toCOP(totalPrice)}?); 
       if (!ok) return;
       
 
