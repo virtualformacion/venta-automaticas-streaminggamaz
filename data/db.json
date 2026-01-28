@@ -29,14 +29,6 @@
       "expiresAt": "2026-02-21",
       "balanceCOP": 50,
       "createdAt": "2026-01-22T17:06:01.249Z"
-    },
-    {
-      "id": "u_a66b9a08-91ac-4a0b-9aae-e67cd489e0b2",
-      "username": "maria",
-      "password": "1111",
-      "expiresAt": "2026-02-24",
-      "balanceCOP": 0,
-      "createdAt": "2026-01-25T19:34:14.459Z"
     }
   ],
   "services": [
