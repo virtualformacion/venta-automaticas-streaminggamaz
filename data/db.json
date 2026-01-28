@@ -11,7 +11,7 @@
       "username": "andres",
       "password": "111111",
       "expiresAt": "2026-01-30",
-      "balanceCOP": 8334,
+      "balanceCOP": 8329,
       "createdAt": "2026-01-21T05:50:37.232Z"
     },
     {
@@ -221,7 +221,8 @@
               {
                 "name": "1",
                 "code": "23343",
-                "available": true
+                "available": false,
+                "soldAt": "2026-01-28T15:32:54.281Z"
               }
             ],
             "addedAt": "2026-01-28T15:28:59.316Z"
@@ -1222,6 +1223,28 @@
         }
       ],
       "purchasedAt": "2026-01-25T15:35:10.510Z"
+    },
+    {
+      "id": "p_415c1217-553e-419c-91b6-58a9966ae46c",
+      "code": "C-9ab1ec72-3640-4917-95d0-6395ae9c68c0",
+      "userId": "u_2b579da5-dbca-411a-8776-ea0c01b66842",
+      "username": "andres",
+      "productKey": "prime_profile",
+      "productName": "Prime Video<br>(1 Perfil)<br>1 Dispositivo",
+      "unitPriceCOP": 5,
+      "qty": 1,
+      "totalPriceCOP": 5,
+      "items": [
+        {
+          "name": "Prime Video<br>(1 Perfil)<br>1 Dispositivo",
+          "mode": "profile",
+          "email": "nandsd@djjd.dd",
+          "password": "121222",
+          "profile": "1",
+          "code": "23343"
+        }
+      ],
+      "purchasedAt": "2026-01-28T15:32:54.282Z"
     }
   ]
 }
