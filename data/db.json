@@ -11,7 +11,7 @@
       "username": "andres",
       "password": "111111",
       "expiresAt": "2026-01-30",
-      "balanceCOP": 8268,
+      "balanceCOP": 268,
       "createdAt": "2026-01-21T05:50:37.232Z"
     },
     {
@@ -32,15 +32,16 @@
       "image": "netflix.jpg",
       "priceCOP": 8000,
       "inventory": {
-        "fullAccounts": [
+        "fullAccounts": [],
+        "fullAccountsSold": [
           {
             "id": "fa_4ed2bfba-b87e-4d84-b1ad-24b9451d6bdc",
             "email": "erergter@referg.erger",
             "password": "ergerger",
-            "addedAt": "2026-01-28T18:47:49.076Z"
+            "addedAt": "2026-01-28T18:47:49.076Z",
+            "soldAt": "2026-01-28T18:49:55.846Z"
           }
-        ],
-        "fullAccountsSold": []
+        ]
       },
       "enabled": true
     },
@@ -1386,6 +1387,27 @@
         }
       ],
       "purchasedAt": "2026-01-28T18:18:38.754Z"
+    },
+    {
+      "id": "p_6ac4b402-34b5-43fa-b7f8-3fbf183b878d",
+      "code": "C-c16f61a8-3c80-4d2c-8021-5a0b380bb37a",
+      "userId": "u_2b579da5-dbca-411a-8776-ea0c01b66842",
+      "username": "andres",
+      "productKey": "netflix_full",
+      "productName": "Netflix<br>(Cuenta completa)",
+      "unitPriceCOP": 8000,
+      "qty": 1,
+      "totalPriceCOP": 8000,
+      "items": [
+        {
+          "name": "Netflix<br>(Cuenta completa)",
+          "mode": "full",
+          "email": "erergter@referg.erger",
+          "password": "ergerger",
+          "deliveryText": "Netflix Premium\nEmail: erergter@referg.erger\nContraseña: ergerger\nPerfiles asignados:\n-<<<\n\nPerfil #1,Pin:8727 🔐\nPerfil #2,Pin:1994 🔐\nPerfil #3,Pin:2020 🔐\nPerfil #4,Pin:2018 🔐\nPerfil #5,Pin:2190 🔐\n\n🍿 Pruebas y me cuentas cualquier novedad😊\n\nCONDICIONES\n- 🚫NO cambiar nombres\n- 🚫NO cambiar imagen \n- 🚫NO cambiar Pin ni contraseña \n- 🚫NO añadir miembro extra\n- 📲1 solo dispositivo por pantalla comprada.\n\n⚠️Si incumples alguna de estas condiciones, pierdes la cuenta sin derecho a garantía o devolución de dinero.⚠️\n\nLa duración de la cuenta es de 27 a 28 días. Por cada mes adquirido.\n\nPAGINA CODIGOS HOGAR\n🌐https://code-gamaz.netlify.app"
+        }
+      ],
+      "purchasedAt": "2026-01-28T18:49:55.846Z"
     }
   ]
 }
