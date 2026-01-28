@@ -275,7 +275,15 @@
       "image": "gift.jpg",
       "priceCOP": 16,
       "inventory": {
-        "giftcards": []
+        "giftcards": [
+          {
+            "id": "gc_34d593ee-4f29-42d2-a553-241d692f944d",
+            "code": "DVVRTBVERBRTB",
+            "available": true,
+            "soldAt": null,
+            "addedAt": "2026-01-28T16:16:39.659Z"
+          }
+        ]
       },
       "enabled": true
     }
