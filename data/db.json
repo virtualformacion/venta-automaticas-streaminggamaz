@@ -28,7 +28,7 @@
       "key": "netflix_full",
       "type": "full",
       "serviceKey": "netflix",
-      "name": "Netflix (Cuenta completa)",
+      "name": "Netflix \n(Cuenta completa)",
       "image": "netflix.jpg",
       "priceCOP": 10,
       "inventory": {
@@ -40,7 +40,7 @@
       "key": "netflix_profile",
       "type": "profile",
       "serviceKey": "netflix",
-      "name": "Netflix (1 Perfil) 1 dispositivo",
+      "name": "Netflix \n(1 Perfil) \n1 Dispositivo",
       "image": "netflix.jpg",
       "priceCOP": 4,
       "inventory": {
@@ -128,7 +128,7 @@
       "key": "disney_full",
       "type": "full",
       "serviceKey": "disney",
-      "name": "Disney+ (Cuenta completa)",
+      "name": "Disney+ \n(Cuenta completa)",
       "image": "disney.jpg",
       "priceCOP": 30000,
       "inventory": {
@@ -140,7 +140,7 @@
       "key": "disney_profile",
       "type": "profile",
       "serviceKey": "disney",
-      "name": "Disney+ Plus (1 Perfil) 1 dispositivo",
+      "name": "Disney+ Plus \n(1 Perfil) \n1 Dispositivo",
       "image": "disney.jpg",
       "priceCOP": 3,
       "inventory": {
@@ -196,7 +196,7 @@
       "key": "prime_full",
       "type": "full",
       "serviceKey": "prime",
-      "name": "Prime Video (Cuenta completa)",
+      "name": "Prime Video \n(Cuenta completa)",
       "image": "prime.jpg",
       "priceCOP": 0,
       "inventory": {
@@ -208,7 +208,7 @@
       "key": "prime_profile",
       "type": "profile",
       "serviceKey": "prime",
-      "name": "Prime Video (1 Perfil)",
+      "name": "Prime Video \n(1 Perfil) \n1 Dispositivo",
       "image": "prime.jpg",
       "priceCOP": 5,
       "inventory": {
@@ -219,7 +219,7 @@
     {
       "key": "combo3",
       "type": "bundle",
-      "name": "Combo Netflix + Prime + Disney (Perfiles)",
+      "name": "Combo \nNetflix + Prime + Disney \n(Perfiles)",
       "image": "combo3.jpg",
       "priceCOP": 20000,
       "bundle": [
@@ -242,7 +242,7 @@
       "key": "netflix_giftcard15",
       "type": "giftcard",
       "serviceKey": "netflix",
-      "name": "Giftcard Netflix USA $15",
+      "name": "Giftcard \nNetflix USA \n$15",
       "image": "gift.jpg",
       "priceCOP": 16,
       "inventory": {
