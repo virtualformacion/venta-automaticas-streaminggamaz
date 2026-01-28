@@ -172,7 +172,7 @@
       "serviceKey": "disney",
       "name": "Disney+ Plus<br>(1 Perfil)<br>1 Dispositivo",
       "image": "disney.jpg",
-      "priceCOP": 3,
+      "priceCOP": 4,
       "inventory": {
         "profileAccounts": [
           {
