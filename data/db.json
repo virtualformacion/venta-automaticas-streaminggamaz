@@ -13,14 +13,6 @@
       "expiresAt": "2026-01-30",
       "balanceCOP": 268,
       "createdAt": "2026-01-21T05:50:37.232Z"
-    },
-    {
-      "id": "u_969c99b5-7d30-4dc0-a59e-3d47c68e52c8",
-      "username": "ana",
-      "password": "123123",
-      "expiresAt": "2026-02-27",
-      "balanceCOP": 0,
-      "createdAt": "2026-01-28T14:15:59.477Z"
     }
   ],
   "services": [
