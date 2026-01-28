@@ -11,7 +11,7 @@
       "username": "andres",
       "password": "111111",
       "expiresAt": "2026-01-30",
-      "balanceCOP": 8283,
+      "balanceCOP": 8278,
       "createdAt": "2026-01-21T05:50:37.232Z"
     },
     {
@@ -258,7 +258,8 @@
               {
                 "name": "erefrer",
                 "code": "11233",
-                "available": true
+                "available": false,
+                "soldAt": "2026-01-28T18:02:35.246Z"
               }
             ],
             "addedAt": "2026-01-28T18:02:09.622Z"
@@ -1357,6 +1358,28 @@
         }
       ],
       "purchasedAt": "2026-01-28T17:58:15.677Z"
+    },
+    {
+      "id": "p_a1fbceb7-2182-475e-a589-387105966325",
+      "code": "C-1ea60ae4-8136-4be2-b526-fc0f263ee697",
+      "userId": "u_2b579da5-dbca-411a-8776-ea0c01b66842",
+      "username": "andres",
+      "productKey": "prime_profile",
+      "productName": "Prime Video<br>(1 Perfil)<br>1 Dispositivo",
+      "unitPriceCOP": 5,
+      "qty": 1,
+      "totalPriceCOP": 5,
+      "items": [
+        {
+          "name": "Prime Video<br>(1 Perfil)<br>1 Dispositivo",
+          "mode": "profile",
+          "email": "efwefwe@edger.er",
+          "password": "ererv",
+          "profile": "erefrer",
+          "code": "11233"
+        }
+      ],
+      "purchasedAt": "2026-01-28T18:02:35.247Z"
     }
   ]
 }
