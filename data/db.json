@@ -141,7 +141,7 @@
       "inventory": {
         "fullAccounts": []
       },
-      "enabled": false
+      "enabled": true
     },
     {
       "key": "disney_profile",
