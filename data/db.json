@@ -28,8 +28,8 @@
       "key": "netflix_full",
       "type": "full",
       "serviceKey": "netflix",
-      "name": "Netflix
-        (Cuenta completa)",
+      "name": "Netflix"
+       "name": "(Cuenta completa)",
       "image": "netflix.jpg",
       "priceCOP": 10,
       "inventory": {
