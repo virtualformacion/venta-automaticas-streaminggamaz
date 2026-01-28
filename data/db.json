@@ -24,16 +24,17 @@
     }
   ],
   "services": [
-    {
-      "key": "netflix_full",
-      "type": "full",
-      "serviceKey": "netflix",
-      "name": "Netflix<br>(Cuenta completa)",
-      "image": "netflix.jpg",
-      "priceCOP": 10,
-      "inventory": {
-        "fullAccounts": []
-      },
+      {
+  "key": "netflix_full",
+  "type": "full",
+  "serviceKey": "netflix",
+  "title": "Netflix",
+  "subtitle": "Cuenta completa",
+  "image": "netflix.jpg",
+  "priceCOP": 10,
+  "inventory": {
+    "fullAccounts": []
+  },
       "enabled": true
     },
     {
