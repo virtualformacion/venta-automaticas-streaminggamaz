@@ -133,14 +133,7 @@
       "image": "disney.jpg",
       "priceCOP": 30000,
       "inventory": {
-        "fullAccounts": [
-          {
-            "id": "fa_b9f3b9e8-3d8d-40dc-a464-d527d98c3075",
-            "email": "gergerg@geg.rer",
-            "password": "rtrrt",
-            "addedAt": "2026-01-28T16:10:15.774Z"
-          }
-        ]
+        "fullAccounts": []
       },
       "enabled": false
     },
