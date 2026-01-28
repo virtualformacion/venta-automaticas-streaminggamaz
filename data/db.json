@@ -40,7 +40,7 @@
       "key": "netflix_profile",
       "type": "profile",
       "serviceKey": "netflix",
-      "name": "Netflix (1 Perfil)",
+      "name": "Netflix (1 Perfil) 1 dispositivo",
       "image": "netflix.jpg",
       "priceCOP": 4,
       "inventory": {
@@ -140,7 +140,7 @@
       "key": "disney_profile",
       "type": "profile",
       "serviceKey": "disney",
-      "name": "Disney+ Plus (1 Perfil)",
+      "name": "Disney+ Plus (1 Perfil) 1 dispositivo",
       "image": "disney.jpg",
       "priceCOP": 3,
       "inventory": {
