@@ -21,14 +21,6 @@
       "expiresAt": "2026-02-27",
       "balanceCOP": 0,
       "createdAt": "2026-01-28T14:15:59.477Z"
-    },
-    {
-      "id": "u_8fde62f2-d21c-48e7-b6c8-d611aaafec8a",
-      "username": "aws",
-      "password": "1111",
-      "expiresAt": "2026-02-27",
-      "balanceCOP": 0,
-      "createdAt": "2026-01-28T18:50:49.876Z"
     }
   ],
   "services": [
