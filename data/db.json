@@ -131,7 +131,7 @@
       "serviceKey": "disney",
       "name": "Disney+<br>(Cuenta completa)",
       "image": "disney.jpg",
-      "priceCOP": 30000,
+      "priceCOP": 5,
       "inventory": {
         "fullAccounts": []
       },
