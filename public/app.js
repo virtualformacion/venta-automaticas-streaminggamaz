@@ -6,6 +6,10 @@ const SHOW_PROFILE_CREDENTIALS = true;
 
 
 
+
+// ✅ Mensaje de privacidad para códigos / pines
+const CODE_PRIVACY_TEXT = `🔒 Recuerda mantener la privacidad de este codigo. Gracias por tu compra.`;
+
 // ✅ Texto estándar de garantía para compras por PERFIL (Netflix/Disney/etc.)
 const WARRANTY_PROFILE_TEXT = `🍿 Pruebas y me cuentas cualquier novedad😊
 
@@ -105,7 +109,9 @@ function clearSession() { localStorage.removeItem("session"); }
 /* Stock */
 function stockCount(product, db) {
   if (product.type === "full") {
-    return product.inventory?.fullAccounts?.length || 0;
+    const arr = product.inventory?.fullAccounts || [];
+    // Cuenta SOLO disponibles. Backward compatible: si no existe "available", se considera disponible.
+    return arr.filter(a => a && a.available !== false).length;
   }
   if (product.type === "profile") {
     const accounts = product.inventory?.profileAccounts || [];
@@ -136,7 +142,14 @@ if (product.type === "giftcard") {
 function takeFullAccount(product) {
   const arr = product.inventory?.fullAccounts || [];
   if (!arr.length) return null;
-  return arr.shift();
+
+  // Toma la primera cuenta DISPONIBLE sin eliminarla del array (para poder verla luego como "Vendida" en stock)
+  const acct = arr.find(a => a && a.available !== false);
+  if (!acct) return null;
+
+  acct.available = false;
+  acct.soldAt = nowISO(); // <- esto habilita borrado automático a 2 días (igual que perfiles/giftcards)
+  return acct;
 }
 function takeProfile(product) {
   const accounts = product.inventory?.profileAccounts || [];
@@ -191,6 +204,20 @@ function autoCleanupData(dbData, opts = {}) {
     }
   }
 
+  // mapa credenciales FULL (email|password) -> fechaVenta (purchasedAt)
+  const soldByFull = {};
+  for (const p of (dbData.purchases || [])) {
+    const t = new Date(p.purchasedAt || 0).getTime();
+    if (!Number.isFinite(t) || !t) continue;
+    for (const it of (p.items || [])) {
+      if (it.mode === "full" && it.email && it.password) {
+        const k = String(it.email).trim().toLowerCase() + "|" + String(it.password);
+        if (!soldByFull[k] || t > soldByFull[k]) soldByFull[k] = t;
+      }
+    }
+  }
+
+
   // 1) compras > N días
   if (Array.isArray(dbData.purchases) && dbData.purchases.length) {
     const before = dbData.purchases.length;
@@ -202,7 +229,52 @@ function autoCleanupData(dbData, opts = {}) {
     if (dbData.purchases.length !== before) changed = true;
   }
 
-  // 2) stock vendido (solo aplica a productos type=profile)
+  
+  // 2) stock vendido (FULL): borra cuentas completas vendidas con más de N días (y normaliza campos)
+  if (Array.isArray(dbData.services)) {
+    for (const prod of dbData.services) {
+      if (prod?.type !== "full") continue;
+
+      const inv = prod.inventory || (prod.inventory = {});
+      const arr = inv.fullAccounts || [];
+      if (!Array.isArray(arr) || !arr.length) continue;
+
+      const kept = [];
+      for (const acc of arr) {
+        if (!acc) { changed = true; continue; }
+
+        // Normaliza (backward compatible)
+        if (typeof acc.available === "undefined") { acc.available = true; changed = true; }
+        if (typeof acc.soldAt === "undefined") { acc.soldAt = null; changed = true; }
+
+        // Si está vendida y no tiene soldAt, intenta inferir por histórico de compras
+        if (acc.available === false && !acc.soldAt && acc.email && acc.password) {
+          const k = String(acc.email).trim().toLowerCase() + "|" + String(acc.password);
+          if (soldByFull[k]) {
+            acc.soldAt = new Date(soldByFull[k]).toISOString();
+            changed = true;
+          }
+        }
+
+        if (acc.available === false) {
+          const soldT = acc.soldAt ? new Date(acc.soldAt).getTime() : NaN;
+          if (Number.isFinite(soldT) && soldT < cutoffSold) {
+            changed = true;
+            continue; // eliminar cuenta completa vendida antigua
+          }
+        }
+
+        kept.push(acc);
+      }
+
+      if (kept.length !== arr.length) {
+        inv.fullAccounts = kept;
+        changed = true;
+      }
+    }
+  }
+
+// 2) stock vendido (solo aplica a productos type=profile)
   if (Array.isArray(dbData.services)) {
     for (const prod of dbData.services) {
       if (prod?.type !== "profile") continue;
@@ -807,12 +879,13 @@ const filteredUsers = data.users.filter(u => {
 
     const fullRows = full.map(p => {
       const list = (p.inventory?.fullAccounts || []);
+      const availableCount = list.filter(a => a && a.available !== false).length;
       return `
         <tr>
           <td><b>${p.name}</b><br/><small>${p.key}</small></td>
           <td>${statusCell(p)}</td>
           <td>${priceCell(p)}</td>
-          <td>${list.length}</td>
+          <td>${availableCount}</td>
           <td>
             <input class="inTable" data-full-email="${p.key}" placeholder="email">
             <input class="inTable" data-full-pass="${p.key}" placeholder="contraseña">
@@ -851,12 +924,13 @@ const filteredUsers = data.users.filter(u => {
 
     const giftcardRows = giftcards.map(p => {
       const list = (p.inventory?.giftcards || []);
+      const availableCount = list.filter(gc => gc && gc.available).length;
       return `
         <tr>
           <td><b>${p.name}</b><br/><small>${p.key}</small></td>
           <td>${statusCell(p)}</td>
           <td>${priceCell(p)}</td>
-          <td>${list.length}</td>
+          <td>${availableCount}</td>
           <td>
             <textarea class="inTable" rows="2" data-gc-codes="${p.key}" placeholder="Códigos (uno por línea)"></textarea>
             <button class="btnSmall btn-success" data-gc-add="${p.key}">Agregar</button>
@@ -925,6 +999,7 @@ const filteredUsers = data.users.filter(u => {
             <td><b>${prod.name}</b><br/><small>${prod.key}</small></td>
             <td><input class="inTable" data-full-edit-email="${prod.key}" data-full-id="${acc.id}" value="${acc.email || ""}"></td>
             <td><input class="inTable" data-full-edit-pass="${prod.key}" data-full-id="${acc.id}" value="${acc.password || ""}"></td>
+            <td><span class="badge">${(acc.available !== false) ? "Disponible" : "Vendido"}</span></td>
             <td><small>${acc.addedAt ? new Date(acc.addedAt).toLocaleString() : ""}</small></td>
             <td>
               <button class="btnSmall btn-success" data-full-stock-save="1" data-key="${prod.key}" data-id="${acc.id}">Guardar</button>
@@ -1019,12 +1094,13 @@ const filteredUsers = data.users.filter(u => {
               <th>Producto</th>
               <th>Email</th>
               <th>Contraseña</th>
+              <th>Estado</th>
               <th>Agregado</th>
               <th>Acciones</th>
             </tr>
           </thead>
           <tbody>
-            ${fullStockRows || `<tr><td colspan="5">No hay cuentas completas en stock</td></tr>`}
+            ${fullStockRows || `<tr><td colspan="6">No hay cuentas completas en stock</td></tr>`}
           </tbody>
         </table>
 
@@ -1102,9 +1178,10 @@ const detail = (p.items || []).map(it => {
     const base = SHOW_PROFILE_CREDENTIALS
       ? `${it.name}: ${it.email} / ${it.password} (Perfil ${it.profile} - Código ${it.code})`
       : `${it.name}: Perfil ${it.profile} (Código ${it.code})`;
-    return `${base}<br/><br/>${WARRANTY_PROFILE_TEXT.replace(/\n/g, "<br/>")}`;
+    return `${base}<br/><br/>${CODE_PRIVACY_TEXT}<br/><br/>${WARRANTY_PROFILE_TEXT.replace(/
+/g, "<br/>")}`;
   }
-  if (it.mode === "giftcard") return `${it.name}: Código ${it.code}`;
+  if (it.mode === "giftcard") return `${it.name}: Código ${it.code}<br/><br/>${CODE_PRIVACY_TEXT}`;
   return it.name;
 }).join("<br/>");
             return `
@@ -1142,7 +1219,8 @@ const detail = (p.items || []).map(it => {
 
       const currentlyEnabled = (p.enabled !== false);
       const next = !currentlyEnabled;
-      const ok = confirm(`${next ? "Habilitar" : "Deshabilitar"}: ${p.name}`);
+      const cleanName = (p.name || "").replace(/<br>\s*\/?>/gi, " ");
+      const ok = confirm(`${next ? "Habilitar" : "Deshabilitar"}: ${cleanName}`);
       if (!ok) return;
 
       p.enabled = next;
@@ -1304,7 +1382,7 @@ await saveDB(d, `Admin edit user ${u.username}`);
       const existsEmail = (p.inventory.fullAccounts || []).some(a => normEmail(a.email) === newEmail);
       if (existsEmail) return alert(`❌ El correo ${email} ya existe en CUENTAS COMPLETAS de este producto.`);
 
-      p.inventory.fullAccounts.push({ id: "fa_" + uuid(), email, password: pass, addedAt: nowISO() });
+      p.inventory.fullAccounts.push({ id: "fa_" + uuid(), email, password: pass, available: true, soldAt: null, addedAt: nowISO() });
 
       await saveDB(d, `Admin add full ${key}`);
       return initAdmin();
@@ -1857,9 +1935,10 @@ const itemsText = (p.items || []).map(it => {
     const base = SHOW_PROFILE_CREDENTIALS
       ? `${it.name}: ${it.email} / ${it.password} (Perfil ${it.profile} - Código ${it.code})`
       : `${it.name}: Perfil ${it.profile} (Código ${it.code})`;
-    return `${base}<br/><br/>${WARRANTY_PROFILE_TEXT.replace(/\n/g, "<br/>")}`;
+    return `${base}<br/><br/>${CODE_PRIVACY_TEXT}<br/><br/>${WARRANTY_PROFILE_TEXT.replace(/
+/g, "<br/>")}`;
   }
-  if (it.mode === "giftcard") return `${it.name}: Código ${it.code}`;
+  if (it.mode === "giftcard") return `${it.name}: Código ${it.code}<br/><br/>${CODE_PRIVACY_TEXT}`;
   return it.name;
 }).join("<br/>");
 
@@ -2045,15 +2124,18 @@ Contraseña: ${it.password}`;
 Correo: ${it.email}
 Contraseña: ${it.password}
 Perfil: ${it.profile}
-Código: ${it.code}`
+Código: ${it.code}
+${CODE_PRIVACY_TEXT}`
       : `${it.name}
 Perfil: ${it.profile}
-Código: ${it.code}`;
+Código: ${it.code}
+${CODE_PRIVACY_TEXT}`;
     return `${base}
 
 ${WARRANTY_PROFILE_TEXT}`;
   }
-  if (it.mode === "giftcard") return `${it.name}: Código ${it.code}`;
+  if (it.mode === "giftcard") return `${it.name}: Código ${it.code}
+${CODE_PRIVACY_TEXT}`;
   return it.name;
 }).join("\n\n");
 
