@@ -40,7 +40,7 @@
       "key": "netflix_profile",
       "type": "profile",
       "serviceKey": "netflix",
-      "name": "Netflix \n(1 Perfil) \n1 Dispositivo",
+      "name": "Netflix<br>(1 Perfil)<br>1 Dispositivo",
       "image": "netflix.jpg",
       "priceCOP": 4,
       "inventory": {
@@ -128,7 +128,7 @@
       "key": "disney_full",
       "type": "full",
       "serviceKey": "disney",
-      "name": "Disney+ \n(Cuenta completa)",
+      "name": "Disney+<br>(Cuenta completa)",
       "image": "disney.jpg",
       "priceCOP": 30000,
       "inventory": {
@@ -140,7 +140,7 @@
       "key": "disney_profile",
       "type": "profile",
       "serviceKey": "disney",
-      "name": "Disney+ Plus \n(1 Perfil) \n1 Dispositivo",
+      "name": "Disney+ Plus<br>(1 Perfil)<br>1 Dispositivo",
       "image": "disney.jpg",
       "priceCOP": 3,
       "inventory": {
@@ -196,7 +196,7 @@
       "key": "prime_full",
       "type": "full",
       "serviceKey": "prime",
-      "name": "Prime Video \n(Cuenta completa)",
+      "name": "Prime Video<br>(Cuenta completa)",
       "image": "prime.jpg",
       "priceCOP": 0,
       "inventory": {
@@ -208,7 +208,7 @@
       "key": "prime_profile",
       "type": "profile",
       "serviceKey": "prime",
-      "name": "Prime Video \n(1 Perfil) \n1 Dispositivo",
+      "name": "Prime Video<br>(1 Perfil)<br>1 Dispositivo",
       "image": "prime.jpg",
       "priceCOP": 5,
       "inventory": {
@@ -242,7 +242,7 @@
       "key": "netflix_giftcard15",
       "type": "giftcard",
       "serviceKey": "netflix",
-      "name": "Giftcard \nNetflix USA \n$15",
+      "name": "Giftcard<br>Netflix USA<br>$15",
       "image": "gift.jpg",
       "priceCOP": 16,
       "inventory": {
