@@ -979,8 +979,8 @@ const filteredUsers = data.users.filter(u => {
         const rowsSold = sold.map(acc => `
           <tr>
             <td><b>${prod.name}</b><br/><small>${prod.key}</small></td>
-            <td><input class="inTable" value="${acc.email || ""}" disabled></td>
-            <td><input class="inTable" value="${acc.password || ""}" disabled></td>
+            <td><input class="inTable" value="${acc.email || ""}" readonly></td>
+            <td><input class="inTable" value="${acc.password || ""}" readonly></td>
             <td><span class="badge">Vendido</span></td>
             <td><small>${acc.soldAt ? new Date(acc.soldAt).toLocaleString() : ""}</small></td>
             <td><small>-</small></td>
