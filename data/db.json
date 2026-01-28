@@ -214,7 +214,7 @@
       "inventory": {
         "profileAccounts": []
       },
-      "enabled": false
+      "enabled": true
     },
     {
       "key": "combo3",
