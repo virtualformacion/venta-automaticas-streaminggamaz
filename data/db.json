@@ -13,14 +13,6 @@
       "expiresAt": "2026-01-30",
       "balanceCOP": 8334,
       "createdAt": "2026-01-21T05:50:37.232Z"
-    },
-    {
-      "id": "u_2f265a9e-c1f3-49bd-899f-75b3b904dc5c",
-      "username": "luis",
-      "password": "111111",
-      "expiresAt": "2026-01-30",
-      "balanceCOP": 20000,
-      "createdAt": "2026-01-22T04:48:23.544Z"
     }
   ],
   "services": [
