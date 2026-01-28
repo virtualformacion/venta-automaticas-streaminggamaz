@@ -592,7 +592,7 @@ async function initAdmin() {
 const adminPassPanel = $("#adminPassPanel");
 const adminPassMsg = $("#adminPassMsg");
 
-// ===== Habilitar/Deshabilitar auto-registro en login =====
+// ===== Habilitar/ auto-registro en login =====
 const allowSelfRegisterChk = $("#allowSelfRegisterChk");
 const saveAllowSelfRegister = $("#saveAllowSelfRegister");
 const allowSelfRegisterMsg = $("#allowSelfRegisterMsg");
@@ -1203,7 +1203,13 @@ const detail = (p.items || []).map(it => {
 
       const currentlyEnabled = (p.enabled !== false);
       const next = !currentlyEnabled;
-      const ok = confirm(`${next ? "Habilitar" : "Deshabilitar"}: ${p.name}`);
+      const cleanName = p.name
+      .replace(/<br\s*\/?>/gi, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+
+      const ok = confirm(`${next ? "Habilitar" : "Deshabilitar"}: ${cleanName}`);
+
       if (!ok) return;
 
       p.enabled = next;
