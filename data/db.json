@@ -13,6 +13,14 @@
       "expiresAt": "2026-01-30",
       "balanceCOP": 268,
       "createdAt": "2026-01-21T05:50:37.232Z"
+    },
+    {
+      "id": "u_e756dec0-3b4a-42eb-8557-d320a884f9ba",
+      "username": "marcelo",
+      "password": "casa2025",
+      "expiresAt": "2026-02-28",
+      "balanceCOP": 0,
+      "createdAt": "2026-01-29T12:51:41.808Z"
     }
   ],
   "services": [
