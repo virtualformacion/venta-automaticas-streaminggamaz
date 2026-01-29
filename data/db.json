@@ -128,6 +128,19 @@
               }
             ],
             "addedAt": "2026-01-28T13:02:40.798Z"
+          },
+          {
+            "id": "pa_22d8ad0e-d875-427c-acfd-2dbd7a68331c",
+            "email": "mar1993hoy+filtro@gmail.com",
+            "password": "NAA5FE",
+            "profiles": [
+              {
+                "name": "1",
+                "code": "8727",
+                "available": true
+              }
+            ],
+            "addedAt": "2026-01-29T16:21:31.007Z"
           }
         ]
       },
