@@ -141,6 +141,19 @@
               }
             ],
             "addedAt": "2026-01-29T16:21:31.007Z"
+          },
+          {
+            "id": "pa_5a5c6dba-22ed-4aa5-879e-73c22b5af019",
+            "email": "netcolom2+carriles@gmail.com",
+            "password": "NAA568",
+            "profiles": [
+              {
+                "name": "1",
+                "code": "8727",
+                "available": true
+              }
+            ],
+            "addedAt": "2026-01-29T22:46:50.153Z"
           }
         ]
       },
