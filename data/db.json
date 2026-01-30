@@ -323,7 +323,7 @@
       "type": "bundle",
       "name": "Combo \nNetflix + Prime + Disney \n(Perfiles)",
       "image": "combo3.jpg",
-      "priceCOP": 10,
+      "priceCOP": 9,
       "bundle": [
         {
           "key": "netflix_profile",
