@@ -338,7 +338,7 @@
           "qty": 1
         }
       ],
-      "enabled": false
+      "enabled": true
     },
     {
       "key": "netflix_giftcard15",
