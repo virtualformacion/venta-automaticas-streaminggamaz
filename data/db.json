@@ -50,7 +50,7 @@
       "type": "profile",
       "serviceKey": "netflix",
       "name": "Netflix<br>(1 Perfil)<br>1 Dispositivo",
-      "image": "netflix.jpg",
+      "image": "netflixp.jpg",
       "priceCOP": 4,
       "inventory": {
         "profileAccounts": [
@@ -176,7 +176,7 @@
       "type": "profile",
       "serviceKey": "disney",
       "name": "Disney+ Plus<br>(1 Perfil)<br>1 Dispositivo",
-      "image": "disney.jpg",
+      "image": "disneyp.jpg",
       "priceCOP": 4,
       "inventory": {
         "profileAccounts": [
@@ -244,7 +244,7 @@
       "type": "profile",
       "serviceKey": "prime",
       "name": "Prime Video<br>(1 Perfil)<br>1 Dispositivo",
-      "image": "prime.jpg",
+      "image": "primep.jpg",
       "priceCOP": 5,
       "inventory": {
         "profileAccounts": [
@@ -345,7 +345,7 @@
       "type": "giftcard",
       "serviceKey": "netflix",
       "name": "Giftcard<br>Netflix USA<br>$15",
-      "image": "gift.jpg",
+      "image": "giftusa.jpg",
       "priceCOP": 16,
       "inventory": {
         "giftcards": [
