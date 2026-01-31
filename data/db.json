@@ -33,15 +33,7 @@
       "priceCOP": 10,
       "inventory": {
         "fullAccounts": [],
-        "fullAccountsSold": [
-          {
-            "id": "fa_4ed2bfba-b87e-4d84-b1ad-24b9451d6bdc",
-            "email": "erergter@referg.erger",
-            "password": "ergerger",
-            "addedAt": "2026-01-28T18:47:49.076Z",
-            "soldAt": "2026-01-28T18:49:55.846Z"
-          }
-        ]
+        "fullAccountsSold": []
       },
       "enabled": true
     },
@@ -249,34 +241,6 @@
       "inventory": {
         "profileAccounts": [
           {
-            "id": "pa_d98aee88-5745-48ac-b816-585dd6b58c5b",
-            "email": "nandsd@djjd.dd",
-            "password": "121222",
-            "profiles": [
-              {
-                "name": "1",
-                "code": "23343",
-                "available": false,
-                "soldAt": "2026-01-28T15:32:54.281Z"
-              }
-            ],
-            "addedAt": "2026-01-28T15:28:59.316Z"
-          },
-          {
-            "id": "pa_2f0c1a10-15c6-4fcf-9262-a6cfdc0d370e",
-            "email": "efwefwe@edger.er",
-            "password": "ererv",
-            "profiles": [
-              {
-                "name": "erefrer",
-                "code": "11233",
-                "available": false,
-                "soldAt": "2026-01-28T18:02:35.246Z"
-              }
-            ],
-            "addedAt": "2026-01-28T18:02:09.622Z"
-          },
-          {
             "id": "pa_9060ba58-70da-40b3-9b28-2aaa875f721e",
             "email": "reto53@hotmail.com",
             "password": "Primevideo-2026",
@@ -348,15 +312,7 @@
       "image": "giftusa.jpg",
       "priceCOP": 16,
       "inventory": {
-        "giftcards": [
-          {
-            "id": "gc_34d593ee-4f29-42d2-a553-241d692f944d",
-            "code": "DVVRTBVERBRTB",
-            "available": false,
-            "soldAt": "2026-01-28T17:58:15.676Z",
-            "addedAt": "2026-01-28T16:16:39.659Z"
-          }
-        ]
+        "giftcards": []
       },
       "enabled": true
     }
