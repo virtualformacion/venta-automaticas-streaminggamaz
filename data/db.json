@@ -146,6 +146,19 @@
               }
             ],
             "addedAt": "2026-01-29T22:46:50.153Z"
+          },
+          {
+            "id": "pa_e717e341-70fb-4aeb-83f4-1b2043878489",
+            "email": "streaming9321+brisas@gmail.com",
+            "password": "NAATRE",
+            "profiles": [
+              {
+                "name": "3",
+                "code": "2020",
+                "available": true
+              }
+            ],
+            "addedAt": "2026-01-31T03:28:06.344Z"
           }
         ]
       },
