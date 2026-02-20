@@ -21,6 +21,14 @@
       "expiresAt": "2026-02-28",
       "balanceCOP": 0,
       "createdAt": "2026-01-29T12:51:41.808Z"
+    },
+    {
+      "id": "u_581fb5da-aa84-4b46-95aa-9555a344bb5b",
+      "username": "bolivar04",
+      "password": "bolivar04",
+      "expiresAt": "2026-03-22",
+      "balanceCOP": 0,
+      "createdAt": "2026-02-20T21:51:15.150Z"
     }
   ],
   "services": [
