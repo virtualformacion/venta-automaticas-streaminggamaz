@@ -29,6 +29,14 @@
       "expiresAt": "2026-03-22",
       "balanceCOP": 0,
       "createdAt": "2026-02-20T21:51:15.150Z"
+    },
+    {
+      "id": "u_f584b42b-e972-4c18-8c61-e8921eb8bef1",
+      "username": "breygner",
+      "password": "kimetsunoyaiba1",
+      "expiresAt": "2026-03-24",
+      "balanceCOP": 0,
+      "createdAt": "2026-02-22T13:35:09.613Z"
     }
   ],
   "services": [
