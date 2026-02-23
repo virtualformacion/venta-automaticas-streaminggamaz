@@ -37,6 +37,14 @@
       "expiresAt": "2026-03-24",
       "balanceCOP": 0,
       "createdAt": "2026-02-22T13:35:09.613Z"
+    },
+    {
+      "id": "u_fadeb5b1-884a-4b9a-9980-65ac9c453bf7",
+      "username": "kallemsensei79",
+      "password": "areku279",
+      "expiresAt": "2026-03-25",
+      "balanceCOP": 0,
+      "createdAt": "2026-02-23T12:18:20.190Z"
     }
   ],
   "services": [
