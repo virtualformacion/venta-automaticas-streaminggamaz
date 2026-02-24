@@ -70,7 +70,7 @@
       "serviceKey": "netflix",
       "name": "Netflix<br>(Cuenta completa)",
       "image": "netflix.jpg",
-      "priceCOP": 10,
+      "priceCOP": 11,
       "inventory": {
         "fullAccounts": [
           {
