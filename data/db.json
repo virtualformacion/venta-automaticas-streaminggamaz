@@ -72,7 +72,14 @@
       "image": "netflix.jpg",
       "priceCOP": 10,
       "inventory": {
-        "fullAccounts": [],
+        "fullAccounts": [
+          {
+            "id": "fa_6462ffa6-f89b-4465-80cc-eca3c888458e",
+            "email": "123caminos123+pandora32@gmail.com",
+            "password": "NAALKJ",
+            "addedAt": "2026-02-24T23:15:07.398Z"
+          }
+        ],
         "fullAccountsSold": []
       },
       "enabled": true
