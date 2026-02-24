@@ -75,7 +75,7 @@
         "fullAccounts": [],
         "fullAccountsSold": []
       },
-      "enabled": false
+      "enabled": true
     },
     {
       "key": "netflix_profile",
