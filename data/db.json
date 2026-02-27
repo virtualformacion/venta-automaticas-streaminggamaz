@@ -69,6 +69,14 @@
       "expiresAt": "2026-03-27",
       "balanceCOP": 0,
       "createdAt": "2026-02-25T21:15:46.986Z"
+    },
+    {
+      "id": "u_c2ac23f9-00b2-4b88-b1ce-c46bd2be0991",
+      "username": "digoma",
+      "password": "mije80631996",
+      "expiresAt": "2026-03-29",
+      "balanceCOP": 0,
+      "createdAt": "2026-02-27T03:13:43.013Z"
     }
   ],
   "services": [
