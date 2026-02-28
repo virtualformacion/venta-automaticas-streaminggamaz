@@ -85,6 +85,14 @@
       "expiresAt": "2026-03-29",
       "balanceCOP": 0,
       "createdAt": "2026-02-27T23:25:22.480Z"
+    },
+    {
+      "id": "u_d296ca6d-619e-4989-b1f0-c1fa869d1155",
+      "username": "antho15",
+      "password": "antho15",
+      "expiresAt": "2026-03-30",
+      "balanceCOP": 0,
+      "createdAt": "2026-02-28T15:57:53.317Z"
     }
   ],
   "services": [
