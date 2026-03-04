@@ -101,6 +101,14 @@
       "expiresAt": "2026-04-02",
       "balanceCOP": 0,
       "createdAt": "2026-03-03T15:40:12.229Z"
+    },
+    {
+      "id": "u_1ac0ba01-6faf-408b-a285-f85664ccd3cd",
+      "username": "limcu",
+      "password": "ebay1234",
+      "expiresAt": "2026-04-03",
+      "balanceCOP": 0,
+      "createdAt": "2026-03-04T22:27:49.477Z"
     }
   ],
   "services": [
