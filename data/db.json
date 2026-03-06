@@ -125,6 +125,14 @@
       "expiresAt": "2026-04-05",
       "balanceCOP": 0,
       "createdAt": "2026-03-06T14:17:29.998Z"
+    },
+    {
+      "id": "u_33dfe9ad-3a12-487c-b873-8f961c55122a",
+      "username": "perolc3",
+      "password": "barco1771",
+      "expiresAt": "2026-04-05",
+      "balanceCOP": 0,
+      "createdAt": "2026-03-06T16:26:26.697Z"
     }
   ],
   "services": [
