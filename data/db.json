@@ -117,6 +117,14 @@
       "expiresAt": "2026-04-05",
       "balanceCOP": 0,
       "createdAt": "2026-03-06T06:58:58.905Z"
+    },
+    {
+      "id": "u_9cb4dc18-62a3-4cc3-be46-7610eb46e358",
+      "username": "juanitaguerra",
+      "password": "juanktaguerra",
+      "expiresAt": "2026-04-05",
+      "balanceCOP": 0,
+      "createdAt": "2026-03-06T14:17:29.998Z"
     }
   ],
   "services": [
