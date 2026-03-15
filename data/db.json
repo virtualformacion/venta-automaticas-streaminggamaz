@@ -165,6 +165,14 @@
       "expiresAt": "2026-04-08",
       "balanceCOP": 0,
       "createdAt": "2026-03-09T03:38:13.604Z"
+    },
+    {
+      "id": "u_ef2a5e15-4a50-4684-8e78-fbdaa0101162",
+      "username": "swanx1",
+      "password": "cdnejm16052010",
+      "expiresAt": "2026-04-14",
+      "balanceCOP": 0,
+      "createdAt": "2026-03-15T01:58:18.686Z"
     }
   ],
   "services": [
