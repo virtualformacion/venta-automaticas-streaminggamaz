@@ -505,7 +505,7 @@
       "inventory": {
         "giftcards": []
       },
-      "enabled": true
+      "enabled": false
     }
   ],
   "purchases": []
