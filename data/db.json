@@ -195,7 +195,7 @@
       "serviceKey": "netflix",
       "name": "Netflix<br>(1 Perfil)<br>1 Dispositivo",
       "image": "netflixp.jpg",
-      "priceCOP": 5,
+      "priceCOP": 3,
       "inventory": {
         "profileAccounts": [
           {
