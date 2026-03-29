@@ -13,6 +13,14 @@
       "expiresAt": "2026-04-30",
       "balanceCOP": 269,
       "createdAt": "2026-01-21T05:50:37.232Z"
+    },
+    {
+      "id": "u_104057e5-e6d8-4925-aea2-366b47a3c4c5",
+      "username": "streamsoft",
+      "password": "123456",
+      "expiresAt": "2026-04-29",
+      "balanceCOP": 96,
+      "createdAt": "2026-03-29T22:13:55.031Z"
     }
   ],
   "services": [
