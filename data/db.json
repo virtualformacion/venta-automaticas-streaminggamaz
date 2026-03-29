@@ -471,7 +471,7 @@
           }
         ]
       },
-      "enabled": true
+      "enabled": false
     },
     {
       "key": "combo3",
