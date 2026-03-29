@@ -11,7 +11,7 @@
       "username": "andres",
       "password": "1090467098",
       "expiresAt": "2026-04-30",
-      "balanceCOP": 89253,
+      "balanceCOP": 89237,
       "createdAt": "2026-01-21T05:50:37.232Z"
     },
     {
@@ -384,8 +384,8 @@
           {
             "id": "gc_217cd644-fcec-4218-be38-fd5ed552f533",
             "code": "NAA3N8HPVSS2Y7PT",
-            "available": true,
-            "soldAt": null,
+            "available": false,
+            "soldAt": "2026-03-29T23:30:41.540Z",
             "addedAt": "2026-03-29T22:09:37.772Z"
           },
           {
@@ -476,6 +476,25 @@
         }
       ],
       "purchasedAt": "2026-03-29T23:15:25.179Z"
+    },
+    {
+      "id": "p_c717ee45-5e35-4515-8cc3-a38d5b9eb933",
+      "code": "C-59b4ceee-ddc3-4043-b80c-ef3607dc378e",
+      "userId": "u_2b579da5-dbca-411a-8776-ea0c01b66842",
+      "username": "andres",
+      "productKey": "netflix_giftcard15",
+      "productName": "Giftcard Netflix USA $15",
+      "unitPriceCOP": 16,
+      "qty": 1,
+      "totalPriceCOP": 16,
+      "items": [
+        {
+          "name": "Giftcard Netflix USA $15",
+          "mode": "giftcard",
+          "code": "NAA3N8HPVSS2Y7PT"
+        }
+      ],
+      "purchasedAt": "2026-03-29T23:30:41.540Z"
     }
   ]
 }
