@@ -343,7 +343,50 @@
       "image": "giftusa.jpg",
       "priceCOP": 16,
       "inventory": {
-        "giftcards": []
+        "giftcards": [
+          {
+            "id": "gc_fae8e4ae-7204-47a1-ad6b-0d5b5c1e75d8",
+            "code": "NAA3NZUVY6BJTFQU",
+            "available": true,
+            "soldAt": null,
+            "addedAt": "2026-03-29T22:09:37.772Z"
+          },
+          {
+            "id": "gc_b2e65676-fb7e-418b-aa92-8b97395c4381",
+            "code": "NAA3NZGW57MH36CT",
+            "available": true,
+            "soldAt": null,
+            "addedAt": "2026-03-29T22:09:37.772Z"
+          },
+          {
+            "id": "gc_52b06565-d368-418b-99a2-3612e7fd0073",
+            "code": "NAA3NRPZCQ4F3CC2",
+            "available": true,
+            "soldAt": null,
+            "addedAt": "2026-03-29T22:09:37.772Z"
+          },
+          {
+            "id": "gc_004bc485-6e18-4a72-b571-f14b05ca4c76",
+            "code": "NAA3N4H8TWRPMQCT",
+            "available": true,
+            "soldAt": null,
+            "addedAt": "2026-03-29T22:09:37.772Z"
+          },
+          {
+            "id": "gc_217cd644-fcec-4218-be38-fd5ed552f533",
+            "code": "NAA3N8HPVSS2Y7PT",
+            "available": true,
+            "soldAt": null,
+            "addedAt": "2026-03-29T22:09:37.772Z"
+          },
+          {
+            "id": "gc_b7d8fad6-9fab-401d-afc8-c9e9f10b2850",
+            "code": "NAA3NLBTN5EPU9S8",
+            "available": true,
+            "soldAt": null,
+            "addedAt": "2026-03-29T22:09:37.772Z"
+          }
+        ]
       },
       "enabled": true
     }
