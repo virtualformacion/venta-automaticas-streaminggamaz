@@ -19,7 +19,7 @@
       "username": "streamsoft",
       "password": "123456",
       "expiresAt": "2026-04-29",
-      "balanceCOP": 96,
+      "balanceCOP": 48,
       "createdAt": "2026-03-29T22:13:55.350Z"
     }
   ],
@@ -355,22 +355,22 @@
           {
             "id": "gc_fae8e4ae-7204-47a1-ad6b-0d5b5c1e75d8",
             "code": "NAA3NZUVY6BJTFQU",
-            "available": true,
-            "soldAt": null,
+            "available": false,
+            "soldAt": "2026-03-29T22:21:42.197Z",
             "addedAt": "2026-03-29T22:09:37.772Z"
           },
           {
             "id": "gc_b2e65676-fb7e-418b-aa92-8b97395c4381",
             "code": "NAA3NZGW57MH36CT",
-            "available": true,
-            "soldAt": null,
+            "available": false,
+            "soldAt": "2026-03-29T22:21:42.199Z",
             "addedAt": "2026-03-29T22:09:37.772Z"
           },
           {
             "id": "gc_52b06565-d368-418b-99a2-3612e7fd0073",
             "code": "NAA3NRPZCQ4F3CC2",
-            "available": true,
-            "soldAt": null,
+            "available": false,
+            "soldAt": "2026-03-29T22:21:42.199Z",
             "addedAt": "2026-03-29T22:09:37.772Z"
           },
           {
@@ -399,5 +399,35 @@
       "enabled": true
     }
   ],
-  "purchases": []
+  "purchases": [
+    {
+      "id": "p_61216afe-9528-4949-8ccd-eb10f2f65429",
+      "code": "C-c25f6604-d572-4c2f-ae15-4b9490c7eceb",
+      "userId": "u_433de1a5-e759-430c-b465-faf415b3578f",
+      "username": "streamsoft",
+      "productKey": "netflix_giftcard15",
+      "productName": "Giftcard<br>Netflix USA<br>$15",
+      "unitPriceCOP": 16,
+      "qty": 3,
+      "totalPriceCOP": 48,
+      "items": [
+        {
+          "name": "Giftcard<br>Netflix USA<br>$15",
+          "mode": "giftcard",
+          "code": "NAA3NZUVY6BJTFQU"
+        },
+        {
+          "name": "Giftcard<br>Netflix USA<br>$15",
+          "mode": "giftcard",
+          "code": "NAA3NZGW57MH36CT"
+        },
+        {
+          "name": "Giftcard<br>Netflix USA<br>$15",
+          "mode": "giftcard",
+          "code": "NAA3NRPZCQ4F3CC2"
+        }
+      ],
+      "purchasedAt": "2026-03-29T22:21:42.199Z"
+    }
+  ]
 }
