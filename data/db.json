@@ -355,7 +355,7 @@
       "key": "netflix_giftcard15",
       "type": "giftcard",
       "serviceKey": "netflix",
-      "name": "Giftcard<br>Netflix USA<br>$15",
+      "name": "Giftcard Netflix USA $15",
       "image": "giftusa.jpg",
       "priceCOP": 16,
       "inventory": {
