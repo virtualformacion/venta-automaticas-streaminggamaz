@@ -11,7 +11,7 @@
       "username": "andres",
       "password": "1090467098",
       "expiresAt": "2026-04-30",
-      "balanceCOP": 100269,
+      "balanceCOP": 89269,
       "createdAt": "2026-01-21T05:50:37.232Z"
     },
     {
@@ -32,15 +32,16 @@
       "image": "netflix.jpg",
       "priceCOP": 11000,
       "inventory": {
-        "fullAccounts": [
+        "fullAccounts": [],
+        "fullAccountsSold": [
           {
             "id": "fa_88cd1991-4f29-423a-a60e-ab4a7e7780d3",
             "email": "mar1993hoy@gmail.com",
             "password": "1132135165",
-            "addedAt": "2026-03-29T23:11:25.652Z"
+            "addedAt": "2026-03-29T23:11:25.652Z",
+            "soldAt": "2026-03-29T23:12:01.927Z"
           }
-        ],
-        "fullAccountsSold": []
+        ]
       },
       "enabled": true
     },
@@ -435,6 +436,27 @@
         }
       ],
       "purchasedAt": "2026-03-29T22:21:42.199Z"
+    },
+    {
+      "id": "p_5ef44c4c-72ed-420b-8287-eef23ac58013",
+      "code": "C-0612a069-75a6-441f-a7c7-a818db42129e",
+      "userId": "u_2b579da5-dbca-411a-8776-ea0c01b66842",
+      "username": "andres",
+      "productKey": "netflix_full",
+      "productName": "Netflix<br>(Cuenta completa)",
+      "unitPriceCOP": 11000,
+      "qty": 1,
+      "totalPriceCOP": 11000,
+      "items": [
+        {
+          "name": "Netflix<br>(Cuenta completa)",
+          "mode": "full",
+          "email": "mar1993hoy@gmail.com",
+          "password": "1132135165",
+          "deliveryText": "Netflix Premium\nEmail: mar1993hoy@gmail.com\nContraseña: 1132135165\nPerfiles asignados:\n-<<<\n\nPerfil #1,Pin:8727 🔐\nPerfil #2,Pin:1994 🔐\nPerfil #3,Pin:2020 🔐\nPerfil #4,Pin:2018 🔐\nPerfil #5,Pin:2190 🔐\n\n🍿 Pruebas y me cuentas cualquier novedad😊\n\nCONDICIONES\n- 🚫NO cambiar nombres\n- 🚫NO cambiar imagen \n- 🚫NO cambiar Pin ni contraseña \n- 🚫NO añadir miembro extra\n- 📲1 solo dispositivo por pantalla comprada.\n\n⚠️Si incumples alguna de estas condiciones, pierdes la cuenta sin derecho a garantía o devolución de dinero.⚠️\n\nLa duración de la cuenta es de 27 a 28 días. Por cada mes adquirido.\n\nPAGINA CODIGOS HOGAR\n🌐https://code-gamaz.netlify.app"
+        }
+      ],
+      "purchasedAt": "2026-03-29T23:12:01.927Z"
     }
   ]
 }
