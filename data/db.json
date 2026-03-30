@@ -7,14 +7,6 @@
   },
   "users": [
     {
-      "id": "u_2b579da5-dbca-411a-8776-ea0c01b66842",
-      "username": "andres",
-      "password": "1090467098",
-      "expiresAt": "2026-04-30",
-      "balanceCOP": 89237,
-      "createdAt": "2026-01-21T05:50:37.232Z"
-    },
-    {
       "id": "u_433de1a5-e759-430c-b465-faf415b3578f",
       "username": "streamsoft",
       "password": "123456",
