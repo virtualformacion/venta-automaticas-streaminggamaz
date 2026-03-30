@@ -19,7 +19,7 @@
       "username": "streamsoft",
       "password": "123456",
       "expiresAt": "2026-04-29",
-      "balanceCOP": 48,
+      "balanceCOP": 0,
       "createdAt": "2026-03-29T22:13:55.350Z"
     }
   ],
@@ -384,22 +384,22 @@
           {
             "id": "gc_b7d8fad6-9fab-401d-afc8-c9e9f10b2850",
             "code": "NAA3NLBTN5EPU9S8",
-            "available": true,
-            "soldAt": null,
+            "available": false,
+            "soldAt": "2026-03-30T05:25:04.710Z",
             "addedAt": "2026-03-29T22:09:37.772Z"
           },
           {
             "id": "gc_2ba815e7-5eb5-46e3-9343-bd2be324b253",
             "code": "NAA3N4H8TWRPMQCT",
-            "available": true,
-            "soldAt": null,
+            "available": false,
+            "soldAt": "2026-03-30T05:25:04.710Z",
             "addedAt": "2026-03-29T23:21:02.862Z"
           },
           {
             "id": "gc_35db40af-2756-4b01-8297-404942455990",
             "code": "NAA3N8HPVSS2Y7PT",
-            "available": true,
-            "soldAt": null,
+            "available": false,
+            "soldAt": "2026-03-30T05:25:04.710Z",
             "addedAt": "2026-03-29T23:32:40.894Z"
           }
         ]
@@ -495,6 +495,35 @@
         }
       ],
       "purchasedAt": "2026-03-29T23:30:41.540Z"
+    },
+    {
+      "id": "p_55bb5883-7a27-4aac-93b2-0d19d2a0e839",
+      "code": "C-633af508-7966-4adc-895c-ef30f941f4e3",
+      "userId": "u_433de1a5-e759-430c-b465-faf415b3578f",
+      "username": "streamsoft",
+      "productKey": "netflix_giftcard15",
+      "productName": "Giftcard Netflix USA $15",
+      "unitPriceCOP": 16,
+      "qty": 3,
+      "totalPriceCOP": 48,
+      "items": [
+        {
+          "name": "Giftcard Netflix USA $15",
+          "mode": "giftcard",
+          "code": "NAA3NLBTN5EPU9S8"
+        },
+        {
+          "name": "Giftcard Netflix USA $15",
+          "mode": "giftcard",
+          "code": "NAA3N4H8TWRPMQCT"
+        },
+        {
+          "name": "Giftcard Netflix USA $15",
+          "mode": "giftcard",
+          "code": "NAA3N8HPVSS2Y7PT"
+        }
+      ],
+      "purchasedAt": "2026-03-30T05:25:04.710Z"
     }
   ]
 }
