@@ -25,15 +25,7 @@
       "priceCOP": 11000,
       "inventory": {
         "fullAccounts": [],
-        "fullAccountsSold": [
-          {
-            "id": "fa_88cd1991-4f29-423a-a60e-ab4a7e7780d3",
-            "email": "mar1993hoy@gmail.com",
-            "password": "1132135165",
-            "addedAt": "2026-03-29T23:11:25.652Z",
-            "soldAt": "2026-03-29T23:12:01.927Z"
-          }
-        ]
+        "fullAccountsSold": []
       },
       "enabled": false
     },
@@ -351,78 +343,7 @@
       "image": "giftusa.jpg",
       "priceCOP": 16,
       "inventory": {
-        "giftcards": [
-          {
-            "id": "gc_7171d057-2716-4ee4-9cb9-9bad0e7b4392",
-            "code": "NAA3NA8N27CFWAUG",
-            "available": false,
-            "soldAt": "2026-03-30T14:36:41.140Z",
-            "addedAt": "2026-03-30T14:31:35.834Z"
-          },
-          {
-            "id": "gc_d17985f9-f111-463f-b7d4-4083f0f4c2fb",
-            "code": "NAA3N2QMAS9TSWP9",
-            "available": false,
-            "soldAt": "2026-03-30T14:36:41.140Z",
-            "addedAt": "2026-03-30T14:31:35.834Z"
-          },
-          {
-            "id": "gc_e0c73c8e-cf0a-4f37-9a66-3fff0d1a6cb8",
-            "code": "NAA3NVVNHC3UHVJS",
-            "available": false,
-            "soldAt": "2026-03-30T14:36:41.140Z",
-            "addedAt": "2026-03-30T14:31:35.834Z"
-          },
-          {
-            "id": "gc_74e920e7-e422-4124-aa97-230a529fba53",
-            "code": "NAA3NUQHB2RTDTCW",
-            "available": false,
-            "soldAt": "2026-03-30T14:36:41.140Z",
-            "addedAt": "2026-03-30T14:31:35.834Z"
-          },
-          {
-            "id": "gc_f734999d-61c0-44a7-9178-e50105157c93",
-            "code": "NAA3NWFS8XE67UUP",
-            "available": false,
-            "soldAt": "2026-03-30T14:36:41.140Z",
-            "addedAt": "2026-03-30T14:31:35.834Z"
-          },
-          {
-            "id": "gc_f1144793-b37f-4f4c-9258-a5358e0ebd05",
-            "code": "NAA3NJU9DVLNS7K4",
-            "available": false,
-            "soldAt": "2026-03-30T14:36:41.140Z",
-            "addedAt": "2026-03-30T14:31:35.834Z"
-          },
-          {
-            "id": "gc_4b5942ee-fc7d-49f6-ad08-0304098ffb28",
-            "code": "NAA3NTJ8R6C88Q88",
-            "available": false,
-            "soldAt": "2026-03-30T14:36:41.140Z",
-            "addedAt": "2026-03-30T14:31:35.834Z"
-          },
-          {
-            "id": "gc_a4c2866b-1ed4-4ec8-b1dc-ef08fdcfcec6",
-            "code": "NAA3N6866DTT2D3W",
-            "available": false,
-            "soldAt": "2026-03-30T14:36:41.140Z",
-            "addedAt": "2026-03-30T14:31:35.834Z"
-          },
-          {
-            "id": "gc_48b10aa7-4e02-41f8-ae52-2e1bda7e1c60",
-            "code": "NAA3NRKRXUE2EVS8",
-            "available": false,
-            "soldAt": "2026-03-30T14:36:41.140Z",
-            "addedAt": "2026-03-30T14:31:35.834Z"
-          },
-          {
-            "id": "gc_f146c11d-81e3-4e3b-8ea4-ad14ba5dcc71",
-            "code": "NAA3NU7X2VR6GQ2J",
-            "available": false,
-            "soldAt": "2026-03-30T14:36:41.140Z",
-            "addedAt": "2026-03-30T14:31:35.835Z"
-          }
-        ]
+        "giftcards": []
       },
       "enabled": true
     }
