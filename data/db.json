@@ -11,7 +11,7 @@
       "username": "streamsoft",
       "password": "123456",
       "expiresAt": "2026-04-29",
-      "balanceCOP": 176,
+      "balanceCOP": 16,
       "createdAt": "2026-03-29T22:13:55.350Z"
     }
   ],
@@ -363,71 +363,71 @@
           {
             "id": "gc_c66265b8-ad6c-4938-8ef2-ae9a02929a3a",
             "code": "NAA3NDJELAB3QPS8",
-            "available": true,
-            "soldAt": null,
+            "available": false,
+            "soldAt": "2026-04-02T22:36:17.814Z",
             "addedAt": "2026-04-02T20:38:46.774Z"
           },
           {
             "id": "gc_73fbdd8e-dc73-463d-81b9-8bbbf6dbc229",
             "code": "NAA3NVHNXLFA7GP7",
-            "available": true,
-            "soldAt": null,
+            "available": false,
+            "soldAt": "2026-04-02T22:36:17.814Z",
             "addedAt": "2026-04-02T21:52:09.444Z"
           },
           {
             "id": "gc_cec7649a-a6c3-4c6a-a262-ceff38472766",
             "code": "NAA3N6KGMCE3RQC8",
-            "available": true,
-            "soldAt": null,
+            "available": false,
+            "soldAt": "2026-04-02T22:36:17.814Z",
             "addedAt": "2026-04-02T21:52:09.444Z"
           },
           {
             "id": "gc_379e8bb1-3013-4a2e-b1f3-7b559900ac42",
             "code": "NAA3N9FGDF3QLS77",
-            "available": true,
-            "soldAt": null,
+            "available": false,
+            "soldAt": "2026-04-02T22:36:17.814Z",
             "addedAt": "2026-04-02T21:52:09.445Z"
           },
           {
             "id": "gc_87d1f14c-1067-403d-a20a-5f245912aac1",
             "code": "NAA3NMWF7VG6KV85",
-            "available": true,
-            "soldAt": null,
+            "available": false,
+            "soldAt": "2026-04-02T22:36:17.814Z",
             "addedAt": "2026-04-02T21:52:09.445Z"
           },
           {
             "id": "gc_fd8cee25-44e0-4135-90ab-1f430b9b8ade",
             "code": "NAA3NBNH2ZSUHUDT",
-            "available": true,
-            "soldAt": null,
+            "available": false,
+            "soldAt": "2026-04-02T22:36:17.814Z",
             "addedAt": "2026-04-02T21:52:09.445Z"
           },
           {
             "id": "gc_8975a4ee-97d0-409a-aca5-d472c9beb562",
             "code": "NAA3NJYJVJNFBQBK",
-            "available": true,
-            "soldAt": null,
+            "available": false,
+            "soldAt": "2026-04-02T22:36:17.814Z",
             "addedAt": "2026-04-02T21:52:09.445Z"
           },
           {
             "id": "gc_f15474a7-879a-405e-af1b-532f1f3d95a5",
             "code": "NAA3NP6XGEGW99A9",
-            "available": true,
-            "soldAt": null,
+            "available": false,
+            "soldAt": "2026-04-02T22:36:17.814Z",
             "addedAt": "2026-04-02T21:52:09.445Z"
           },
           {
             "id": "gc_2533862e-8d14-4b17-9b61-860211498c50",
             "code": "NAA3NJKQFTWTKYV6",
-            "available": true,
-            "soldAt": null,
+            "available": false,
+            "soldAt": "2026-04-02T22:36:17.814Z",
             "addedAt": "2026-04-02T21:52:09.445Z"
           },
           {
             "id": "gc_7d662d07-806e-4f2d-9f30-352b70889657",
             "code": "NAA3N9JJH8WS9JYX",
-            "available": true,
-            "soldAt": null,
+            "available": false,
+            "soldAt": "2026-04-02T22:36:17.814Z",
             "addedAt": "2026-04-02T21:52:09.445Z"
           },
           {
@@ -735,6 +735,70 @@
         }
       ],
       "purchasedAt": "2026-04-02T21:46:32.767Z"
+    },
+    {
+      "id": "p_3800a6af-4cce-470d-89ce-575e63eb0b06",
+      "code": "C-7600d2fe-6c2a-4280-95c2-be5df06099c7",
+      "userId": "u_433de1a5-e759-430c-b465-faf415b3578f",
+      "username": "streamsoft",
+      "productKey": "netflix_giftcard15",
+      "productName": "Giftcard Netflix USA $15",
+      "unitPriceCOP": 16,
+      "qty": 10,
+      "totalPriceCOP": 160,
+      "items": [
+        {
+          "name": "Giftcard Netflix USA $15",
+          "mode": "giftcard",
+          "code": "NAA3NDJELAB3QPS8"
+        },
+        {
+          "name": "Giftcard Netflix USA $15",
+          "mode": "giftcard",
+          "code": "NAA3NVHNXLFA7GP7"
+        },
+        {
+          "name": "Giftcard Netflix USA $15",
+          "mode": "giftcard",
+          "code": "NAA3N6KGMCE3RQC8"
+        },
+        {
+          "name": "Giftcard Netflix USA $15",
+          "mode": "giftcard",
+          "code": "NAA3N9FGDF3QLS77"
+        },
+        {
+          "name": "Giftcard Netflix USA $15",
+          "mode": "giftcard",
+          "code": "NAA3NMWF7VG6KV85"
+        },
+        {
+          "name": "Giftcard Netflix USA $15",
+          "mode": "giftcard",
+          "code": "NAA3NBNH2ZSUHUDT"
+        },
+        {
+          "name": "Giftcard Netflix USA $15",
+          "mode": "giftcard",
+          "code": "NAA3NJYJVJNFBQBK"
+        },
+        {
+          "name": "Giftcard Netflix USA $15",
+          "mode": "giftcard",
+          "code": "NAA3NP6XGEGW99A9"
+        },
+        {
+          "name": "Giftcard Netflix USA $15",
+          "mode": "giftcard",
+          "code": "NAA3NJKQFTWTKYV6"
+        },
+        {
+          "name": "Giftcard Netflix USA $15",
+          "mode": "giftcard",
+          "code": "NAA3N9JJH8WS9JYX"
+        }
+      ],
+      "purchasedAt": "2026-04-02T22:36:17.814Z"
     }
   ]
 }
