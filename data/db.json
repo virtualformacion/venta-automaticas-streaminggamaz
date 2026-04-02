@@ -11,7 +11,7 @@
       "username": "streamsoft",
       "password": "123456",
       "expiresAt": "2026-04-29",
-      "balanceCOP": 16,
+      "balanceCOP": 0,
       "createdAt": "2026-03-29T22:13:55.350Z"
     }
   ],
@@ -417,8 +417,8 @@
           {
             "id": "gc_f14f18e6-1077-447a-9a2e-ad6876aac747",
             "code": "NAA3N8WUQX2MW9YS",
-            "available": true,
-            "soldAt": null,
+            "available": false,
+            "soldAt": "2026-04-02T06:30:47.360Z",
             "addedAt": "2026-04-01T21:29:09.831Z"
           }
         ]
@@ -671,6 +671,25 @@
         }
       ],
       "purchasedAt": "2026-04-01T22:02:50.867Z"
+    },
+    {
+      "id": "p_0098b15a-f9af-497e-9511-35fd1bd7c239",
+      "code": "C-0e8f9d7c-1974-432d-a688-bf4d5226b2a9",
+      "userId": "u_433de1a5-e759-430c-b465-faf415b3578f",
+      "username": "streamsoft",
+      "productKey": "netflix_giftcard15",
+      "productName": "Giftcard Netflix USA $15",
+      "unitPriceCOP": 16,
+      "qty": 1,
+      "totalPriceCOP": 16,
+      "items": [
+        {
+          "name": "Giftcard Netflix USA $15",
+          "mode": "giftcard",
+          "code": "NAA3N8WUQX2MW9YS"
+        }
+      ],
+      "purchasedAt": "2026-04-02T06:30:47.361Z"
     }
   ]
 }
