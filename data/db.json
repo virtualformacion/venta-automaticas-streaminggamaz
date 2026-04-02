@@ -345,13 +345,6 @@
       "inventory": {
         "giftcards": [
           {
-            "id": "gc_fbbd7c15-90b6-4606-9e66-766426389fbe",
-            "code": "NAA3NWN8D98B4XXY",
-            "available": false,
-            "soldAt": "2026-04-01T22:02:50.866Z",
-            "addedAt": "2026-04-01T21:26:41.485Z"
-          },
-          {
             "id": "gc_111e3b56-f5dc-4994-996d-008abac751ec",
             "code": "NAA3N4AS7SA6PL8P",
             "available": false,
