@@ -277,11 +277,6 @@
             "password": "Primevideo-2026",
             "profiles": [
               {
-                "name": "1",
-                "code": "12222",
-                "available": true
-              },
-              {
                 "name": "2",
                 "code": "21111",
                 "available": true
